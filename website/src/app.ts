@@ -1,11 +1,16 @@
 import { loadHome } from './home.js';
+import { loadKMeans } from './kmeans.js';
+import { loadDBSCAN } from './dbscan.js';
 import { loadAbout } from './about.js';
+
 
 function createNavBar(): void {
     const navbar = document.getElementById('navbar');
     if (navbar) {
         navbar.innerHTML = `
             <a href="#" id="home-link">Home</a>
+            <a href="#" id="kmeans-link">K-Means</a>
+            <a href="#" id="dbscan-link">DBSCAN</a>
             <a href="#" id="about-link">About</a>
         `;
 
@@ -13,6 +18,18 @@ function createNavBar(): void {
             e.preventDefault();
             console.log('Home link clicked');
             loadHome();
+        });
+
+        document.getElementById('kmeans-link')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('KMeans link clicked');
+            loadKMeans();
+        });
+
+        document.getElementById('dbscan-link')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('DBSCAN link clicked');
+            loadDBSCAN();
         });
 
         document.getElementById('about-link')?.addEventListener('click', (e) => {
