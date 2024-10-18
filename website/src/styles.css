@@ -48,21 +48,6 @@ nav a:hover {
     background-color: #424242;
 }
 
-#home-link {
-    font-size: 1em;
-    padding-bottom: 8px;
-}
-
-#home-link:hover {
-    background-color: transparent;
-    border: none;
-}
-
-#home-link img.nav-img {
-    height: 32px;
-    margin: 5px 10px 0;
-}
-
 /* Content styling */
 #content {
     display: flex;
@@ -85,7 +70,7 @@ nav a:hover {
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 #bottombar heart-icon {
