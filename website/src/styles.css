@@ -40,11 +40,17 @@ nav a {
     display: flex;
     align-items: center;
     padding: 10px;
-    border: 2px hidden;
+    border: 2px solid transparent;
     border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 nav a:hover {
+    border: 2px solid #fff;
+    background-color: #424242;
+}
+
+nav a.active {
     background-color: #424242;
 }
 
