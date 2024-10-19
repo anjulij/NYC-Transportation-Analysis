@@ -1,9 +1,10 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.datasets import make_blobs
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import DBSCAN
 from sklearn import metrics
+import plotly.express as px
+import plotly.graph_objects as go
 
 # Generate synthetic data
 centers = [[1, 1], [-1, -1], [1, -1]]
@@ -30,24 +31,47 @@ print(f"Adjusted Rand Index: {metrics.adjusted_rand_score(labels_true, labels):.
 print(f"Adjusted Mutual Information: {metrics.adjusted_mutual_info_score(labels_true, labels):.3f}")
 print(f"Silhouette Coefficient: {metrics.silhouette_score(X, labels):.3f}")
 
-# Plotting the clusters
+# Create an interactive plot with Plotly
+fig = go.Figure()
+
 unique_labels = set(labels)
-core_samples_mask = np.zeros_like(labels, dtype=bool)
-core_samples_mask[db.core_sample_indices_] = True
+for k in unique_labels:
+    # Define color and marker properties
+    color = 'black' if k == -1 else px.colors.qualitative.Plotly[k % len(px.colors.qualitative.Plotly)]
+    marker_size = 14 if k != -1 else 6
 
-colors = [plt.cm.Spectral(each) for each in np.linspace(0, 1, len(unique_labels))]
-for k, col in zip(unique_labels, colors):
-    if k == -1:
-        # Black color for noise.
-        col = [0, 0, 0, 1]
-
+    # Mask points belonging to the current cluster
     class_member_mask = (labels == k)
 
-    xy = X[class_member_mask & core_samples_mask]
-    plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col), markeredgecolor='k', markersize=14)
+    # Add core points
+    core_samples_mask = np.zeros_like(labels, dtype=bool)
+    core_samples_mask[db.core_sample_indices_] = True
+    xy_core = X[class_member_mask & core_samples_mask]
 
-    xy = X[class_member_mask & ~core_samples_mask]
-    plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col), markeredgecolor='k', markersize=6)
+    fig.add_trace(go.Scatter(
+        x=xy_core[:, 0], y=xy_core[:, 1],
+        mode='markers',
+        marker=dict(size=14, color=color, line=dict(width=2, color='black')),
+        name=f'Cluster {k}' if k != -1 else 'Noise'
+    ))
 
-plt.title(f'Estimated number of clusters: {n_clusters_}')
-plt.show()
+    # Add non-core points
+    xy_non_core = X[class_member_mask & ~core_samples_mask]
+    fig.add_trace(go.Scatter(
+        x=xy_non_core[:, 0], y=xy_non_core[:, 1],
+        mode='markers',
+        marker=dict(size=6, color=color, line=dict(width=1, color='black')),
+        showlegend=False
+    ))
+
+# Update plot title and layout
+fig.update_layout(
+    title=f'Estimated number of clusters: {n_clusters_}',
+    xaxis_title='Feature 1',
+    yaxis_title='Feature 2'
+)
+
+# Save the plot to an HTML file
+fig.write_html("../website/src/assets/generated_plots/dbscan_clusters.html")
+
+print("Plot saved to dbscan_clusters.html")
