@@ -7,7 +7,7 @@ function createNavBar() {
     const navbar = document.getElementById('navbar');
     if (navbar) {
         navbar.innerHTML = `
-            <a href="#" id="home-link">Home</a>
+            <a href="#" id="home-link">NYC Public Transport Analysis</a>
             <a href="#" id="kmeans-link">K-Means</a>
             <a href="#" id="dbscan-link">DBSCAN</a>
             <a href="#" id="about-link">About</a>
