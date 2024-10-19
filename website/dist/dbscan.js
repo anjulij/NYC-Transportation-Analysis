@@ -12,7 +12,7 @@ export function loadDBSCAN() {
     function loadClusterPlot() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const response = yield fetch('/src/cluster_plot.html'); // Adjust the path if necessary
+                const response = yield fetch('/src/assets/generated_plots/dbscan_clusters.html');
                 const plotHtml = yield response.text();
                 const content = document.getElementById('content');
                 if (content) {

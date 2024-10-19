@@ -3,7 +3,7 @@ export function loadDBSCAN(): void {
 
     async function loadClusterPlot() {
         try {
-            const response = await fetch('/src/cluster_plot.html'); // Adjust the path if necessary
+            const response = await fetch('/src/assets/generated_plots/dbscan_clusters.html');
             const plotHtml = await response.text();
   
             const content = document.getElementById('content');
