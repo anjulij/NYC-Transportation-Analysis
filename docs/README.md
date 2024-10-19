@@ -1,4 +1,4 @@
-# NYC-Public-Transport-Analysis
+# NYC-Transportation-Analysis
 
 # Description and Motivation
 The objective of this project is to identify the bottlenecks in NYC traffic patterns and overlay the taxi, bus, and subway congestion maps. This analysis can lead to more efficient bus/taxi routes and/or help users decide on the most efficient mode of transportation. 
