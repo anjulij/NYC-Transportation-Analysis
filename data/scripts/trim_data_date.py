@@ -3,22 +3,46 @@ from datetime import datetime
 
 def trim_csv_by_date(input_file, output_file, start_date, end_date, chunk_size=100000):
     # Convert the start and end dates to datetime objects
-    start_date = datetime.strptime(start_date, '%m-%d-%y %H:%M')
-    end_date = datetime.strptime(end_date, '%m-%d-%y %H:%M')
+    start_date = datetime.strptime(start_date, '%m-%d-%y %I:%M:%S %p')
+    end_date = datetime.strptime(end_date, '%m-%d-%y %I:%M:%S %p')
 
-    # Open the output file in write mode and write the header only once
+    def parse_timestamp(timestamp):
+        """Try multiple formats to parse the timestamp."""
+        formats = ['%m/%d/%y %I:%M:%S %p', '%m-%d-%y %I:%M:%S %p', '%m/%d/%Y %I:%M:%S %p']
+        for fmt in formats:
+            try:
+                return datetime.strptime(timestamp, fmt)
+            except ValueError:
+                print(f"Failed to parse: {timestamp}")
+                continue        
+        return pd.Na
+
+     # Open the output file to ensure the header is written even if no rows are found
     with open(output_file, 'w') as f_out:
         header_written = False
 
         # Process the CSV in chunks
-        for chunk in pd.read_csv(input_file, chunksize=chunk_size, low_memory=False):
-            # Parse the 'transit_timestamp' column as datetime
-            chunk['transit_timestamp'] = pd.to_datetime(
-                chunk['transit_timestamp'], format='%m-%d-%y %I:%M', errors='coerce'
-            )
+        for i, chunk in enumerate(pd.read_csv(input_file, chunksize=chunk_size, low_memory=False)):
+            print(f"Processing chunk {i+1}...")  # Debugging output
+
+            # Apply the custom timestamp parser
+            chunk['transit_timestamp'] = chunk['transit_timestamp'].apply(parse_timestamp)
+
+            # Report how many valid timestamps were parsed
+            valid_timestamps = chunk['transit_timestamp'].notna().sum()
+            print(f"Valid timestamps in chunk {i+1}: {valid_timestamps}")
+
+            # Write the header even if no valid rows found in the first chunk
+            if not header_written:
+                chunk.head(0).to_csv(f_out, index=False)  # Write header
+                header_written = True
 
             # Drop rows with invalid dates
             chunk = chunk.dropna(subset=['transit_timestamp'])
+
+            # Print some valid rows for verification
+            if not chunk.empty:
+                print(chunk.head())  # Debugging: print the first few valid rows
 
             # Filter the chunk for rows within the date range
             filtered_chunk = chunk[
@@ -26,17 +50,18 @@ def trim_csv_by_date(input_file, output_file, start_date, end_date, chunk_size=1
                 (chunk['transit_timestamp'] <= end_date)
             ]
 
+            print(f"Filtered rows in chunk {i+1}: {len(filtered_chunk)}")  # Debugging output
+
             # Write the filtered rows to the output file
             if not filtered_chunk.empty:
-                filtered_chunk.to_csv(f_out, index=False, header=not header_written)
-                header_written = True  # Ensure the header is written only once
+                filtered_chunk.to_csv(f_out, index=False, header=False)
 
     print(f'Trimmed CSV saved to {output_file}')
 
-# Usage example:
+# Define variables
 input_file = 'csvs/MTA_Subway_Hourly_Ridership__Beginning_July_2020.csv'
 output_file = 'trimmed_output.csv'
-start_date = '01-01-22 00:00'  # Start date (inclusive)
-end_date = '12-31-22 23:59'    # End date (inclusive)
+start_date = '01-01-22 12:00:00 AM'  # Start date (inclusive)
+end_date = '12-31-22 11:59:00 PM'    # End date (inclusive)
 
 trim_csv_by_date(input_file, output_file, start_date, end_date)
