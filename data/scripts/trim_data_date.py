@@ -6,17 +6,6 @@ def trim_csv_by_date(input_file, output_file, start_date, end_date, chunk_size=1
     start_date = datetime.strptime(start_date, '%m-%d-%y %I:%M:%S %p')
     end_date = datetime.strptime(end_date, '%m-%d-%y %I:%M:%S %p')
 
-    def parse_timestamp(timestamp):
-        """Try multiple formats to parse the timestamp."""
-        formats = ['%m/%d/%y %I:%M:%S %p', '%m-%d-%y %I:%M:%S %p', '%m/%d/%Y %I:%M:%S %p']
-        for fmt in formats:
-            try:
-                return datetime.strptime(timestamp, fmt)
-            except ValueError:
-                print(f"Failed to parse: {timestamp}")
-                continue        
-        return pd.Na
-
      # Open the output file to ensure the header is written even if no rows are found
     with open(output_file, 'w') as f_out:
         header_written = False
@@ -26,7 +15,7 @@ def trim_csv_by_date(input_file, output_file, start_date, end_date, chunk_size=1
             print(f"Processing chunk {i+1}...")  # Debugging output
 
             # Apply the custom timestamp parser
-            chunk['transit_timestamp'] = chunk['transit_timestamp'].apply(parse_timestamp)
+            chunk['transit_timestamp'] = pd.to_datetime(chunk['transit_timestamp'], errors='coerce')
 
             # Report how many valid timestamps were parsed
             valid_timestamps = chunk['transit_timestamp'].notna().sum()
@@ -60,7 +49,7 @@ def trim_csv_by_date(input_file, output_file, start_date, end_date, chunk_size=1
 
 # Define variables
 input_file = 'csvs/MTA_Subway_Hourly_Ridership__Beginning_July_2020.csv'
-output_file = 'trimmed_output.csv'
+output_file = 'MTA_Subway_Hourly_Ridership__Beginning_July_2020_trimmed.csv'
 start_date = '01-01-22 12:00:00 AM'  # Start date (inclusive)
 end_date = '12-31-22 11:59:00 PM'    # End date (inclusive)
 
