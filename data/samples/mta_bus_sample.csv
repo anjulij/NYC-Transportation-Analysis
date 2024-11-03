@@ -1,0 +1,101 @@
+transit_timestamp,bus_route,payment_method,fare_class_category,ridership,transfers
+02/26/2022 08:00:00 AM,QM35,omny,OMNY - Full Fare,0.0,0.0
+02/26/2022 07:00:00 PM,QM40,metrocard,Metrocard - Unlimited 30-Day,0.002,0.0
+02/26/2022 03:00:00 PM,QM4,metrocard,Metrocard - Full Fare,0.072000004,0.0
+02/26/2022 06:00:00 PM,QM42,metrocard,Metrocard - Fair Fare,0.0,0.0
+02/26/2022 10:00:00 PM,QM42,metrocard,Metrocard - Unlimited 7-Day,0.0,0.0
+02/26/2022 07:00:00 PM,S61,metrocard,Metrocard - Seniors & Disability,4.0,0.0
+02/26/2022 09:00:00 AM,S61,metrocard,Metrocard - Unlimited 7-Day,16.999,0.0
+02/26/2022 02:00:00 PM,S62,metrocard,Metrocard - Unlimited 30-Day,9.01,0.0
+02/26/2022 12:00:00 PM,S66,metrocard,Metrocard - Unlimited 30-Day,0.010000001,0.0
+02/26/2022 03:00:00 PM,SIM5,metrocard,Metrocard - Unlimited 30-Day,0.0050000004,0.0
+02/26/2022 03:00:00 PM,SIM7,metrocard,Metrocard - Unlimited 7-Day,0.0,0.0
+02/26/2022 07:00:00 PM,SIM7,omny,OMNY - Full Fare,0.0,0.0
+02/26/2022 09:00:00 AM,SIM4C,metrocard,Metrocard - Unlimited 7-Day,13.003,0.0
+02/26/2022 09:00:00 PM,SIM4C,metrocard,Metrocard - Unlimited 7-Day,1.003,0.0
+02/26/2022 02:00:00 PM,SIM4X,metrocard,Metrocard - Seniors & Disability,0.0,0.0
+02/26/2022 07:00:00 PM,SIM7,metrocard,Metrocard - Unlimited 30-Day,0.0,0.0
+02/26/2022 11:00:00 AM,B42,metrocard,Metrocard - Unlimited 30-Day,10.026,0.0
+02/26/2022 07:00:00 PM,B42,omny,OMNY - Full Fare,6.2,2.055
+02/26/2022 12:00:00 AM,B43,metrocard,Metrocard - Other,1.166,0.0
+02/26/2022 10:00:00 AM,B44,metrocard,Metrocard - Full Fare,76.052,20.992
+02/26/2022 07:00:00 PM,B44,metrocard,Metrocard - Other,9.288,0.0
+02/26/2022 06:00:00 PM,B84,metrocard,Metrocard - Seniors & Disability,1.0009999,1.0009999
+02/26/2022 09:00:00 PM,B84,metrocard,Metrocard - Unlimited 7-Day,0.0,0.0
+02/26/2022 05:00:00 AM,B9,metrocard,Metrocard - Other,0.0,0.0
+02/26/2022 06:00:00 PM,B9,metrocard,Metrocard - Unlimited 30-Day,45.102,0.0
+02/26/2022 09:00:00 PM,B83,metrocard,Metrocard - Unlimited 7-Day,15.007,0.0
+02/26/2022 01:00:00 PM,B84,omny,OMNY - Full Fare,2.0,2.0
+02/26/2022 08:00:00 PM,BX34,metrocard,Metrocard - Unlimited 30-Day,5.002,0.0
+02/26/2022 03:00:00 PM,BX34,metrocard,Metrocard - Unlimited 7-Day,17.003,0.0
+02/26/2022 07:00:00 AM,BX32,metrocard,Metrocard - Full Fare,2.01,0.001
+02/26/2022 07:00:00 AM,BX34,metrocard,Metrocard - Seniors & Disability,1.002,0.0
+02/26/2022 06:00:00 PM,BX34,metrocard,Metrocard - Seniors & Disability,4.007,0.0
+02/26/2022 06:00:00 PM,B67,metrocard,Metrocard - Other,2.023,0.0
+02/26/2022 09:00:00 PM,B67,metrocard,Metrocard - Seniors & Disability,2.022,0.0
+02/26/2022 08:00:00 PM,B67,metrocard,Metrocard - Unlimited 7-Day,1.019,0.0
+02/26/2022 03:00:00 PM,B7,metrocard,Metrocard - Full Fare,25.024,8.002
+02/26/2022 08:00:00 PM,B68,metrocard,Metrocard - Other,1.8510001,0.0
+02/26/2022 12:00:00 PM,BX24,metrocard,Metrocard - Fair Fare,0.997,0.0
+02/26/2022 08:00:00 PM,BX24,metrocard,Metrocard - Unlimited 7-Day,0.0,0.0
+02/26/2022 10:00:00 PM,BX24,metrocard,Metrocard - Unlimited 7-Day,1.003,0.0
+02/26/2022 06:00:00 AM,BX26,metrocard,Metrocard - Other,2.006,0.0
+02/26/2022 07:00:00 PM,BX26,metrocard,Metrocard - Unlimited 30-Day,16.999,0.0
+02/26/2022 09:00:00 AM,M10,metrocard,Metrocard - Unlimited 7-Day,7.994,0.0
+02/26/2022 12:00:00 AM,M100,metrocard,Metrocard - Unlimited 7-Day,5.003,0.0
+02/26/2022 08:00:00 PM,M10,metrocard,Metrocard - Unlimited 7-Day,16.015,0.0
+02/26/2022 05:00:00 AM,M101,metrocard,Metrocard - Other,4.984,0.0
+02/26/2022 06:00:00 AM,M7,metrocard,Metrocard - Unlimited 30-Day,4.0,0.0
+02/26/2022 12:00:00 AM,M72,metrocard,Metrocard - Full Fare,2.008,0.0
+02/26/2022 09:00:00 PM,M72,metrocard,Metrocard - Unlimited 30-Day,5.002,0.0
+02/26/2022 05:00:00 PM,M79+,metrocard,Metrocard - Seniors & Disability,63.998,17.998
+02/26/2022 06:00:00 PM,Q2,metrocard,Metrocard - Students,0.005,0.0
+02/26/2022 09:00:00 PM,Q2,metrocard,Metrocard - Unlimited 30-Day,14.02,0.0
+02/26/2022 10:00:00 AM,Q46,omny,OMNY - Full Fare,43.66,8.16
+02/26/2022 11:00:00 AM,Q47,metrocard,Metrocard - Fair Fare,7.008,0.0
+02/26/2022 01:00:00 PM,Q46,omny,OMNY - Other,0.0,0.0
+02/26/2022 07:00:00 AM,Q47,omny,OMNY - Other,0.006,0.0
+02/26/2022 06:00:00 AM,QM15,omny,OMNY - Full Fare,0.13100001,0.020000001
+02/26/2022 02:00:00 PM,QM16,omny,OMNY - Full Fare,0.15100001,0.023000002
+02/26/2022 07:00:00 AM,QM17,omny,OMNY - Full Fare,0.040000003,0.004
+02/26/2022 07:00:00 PM,QM18,omny,OMNY - Full Fare,0.102000006,0.034
+02/26/2022 04:00:00 PM,QM20,metrocard,Metrocard - Fair Fare,0.002,0.001
+02/26/2022 07:00:00 PM,QM20,metrocard,Metrocard - Full Fare,0.001,0.001
+02/26/2022 04:00:00 PM,SIM22,metrocard,Metrocard - Other,0.0,0.0
+02/26/2022 10:00:00 PM,SIM1C,omny,OMNY - Full Fare,41.021,5.004
+02/26/2022 02:00:00 AM,SIM2,metrocard,Metrocard - Full Fare,0.004,0.002
+02/26/2022 04:00:00 PM,SIM2,metrocard,Metrocard - Full Fare,0.008,0.0
+02/26/2022 09:00:00 PM,SIM23,metrocard,Metrocard - Full Fare,0.028,0.003
+02/26/2022 09:00:00 PM,BXM11,metrocard,Metrocard - Seniors & Disability,0.0,0.0
+02/26/2022 10:00:00 PM,BXM11,metrocard,Metrocard - Other,0.0,0.0
+02/26/2022 05:00:00 PM,M34A+,metrocard,Metrocard - Seniors & Disability,18.460001,2.394
+02/26/2022 11:00:00 PM,M34A+,metrocard,Metrocard - Unlimited 30-Day,6.439,0.0
+02/26/2022 03:00:00 PM,M35,metrocard,Metrocard - Unlimited 30-Day,1.0040001,0.0
+02/26/2022 02:00:00 AM,M42,metrocard,Metrocard - Other,0.048,0.0
+02/26/2022 06:00:00 PM,M34A+,metrocard,Metrocard - Students,0.0,0.0
+02/26/2022 12:00:00 PM,M35,metrocard,Metrocard - Other,0.001,0.0
+02/26/2022 02:00:00 PM,M35,metrocard,Metrocard - Other,0.003,0.0
+02/26/2022 07:00:00 PM,B12,metrocard,Metrocard - Full Fare,47.206,15.012
+02/26/2022 12:00:00 AM,B12,omny,OMNY - Full Fare,3.054,3.0
+02/26/2022 05:00:00 AM,B13,metrocard,Metrocard - Fair Fare,5.0,1.0009999
+02/26/2022 02:00:00 PM,B11,metrocard,Metrocard - Unlimited 7-Day,36.038,0.0
+02/26/2022 04:00:00 PM,B14,metrocard,Metrocard - Fair Fare,15.001,3.001
+02/26/2022 12:00:00 AM,B1,metrocard,Metrocard - Other,0.224,0.0
+02/26/2022 04:00:00 PM,B100,metrocard,Metrocard - Fair Fare,1.0,0.0
+02/26/2022 09:00:00 PM,B100,metrocard,Metrocard - Other,3.158,3.0019999
+02/26/2022 01:00:00 AM,B100,metrocard,Metrocard - Unlimited 30-Day,0.002,0.0
+02/26/2022 07:00:00 AM,B1,omny,OMNY - Full Fare,51.672,2.408
+02/26/2022 07:00:00 PM,B100,metrocard,Metrocard - Unlimited 30-Day,13.014,0.0
+02/26/2022 09:00:00 AM,B103,omny,OMNY - Full Fare,45.136,6.018
+02/26/2022 06:00:00 PM,B46+,metrocard,Metrocard - Students,0.0,0.0
+02/26/2022 05:00:00 PM,B46,omny,OMNY - Full Fare,75.746,18.368
+02/26/2022 06:00:00 AM,BX12,metrocard,Metrocard - Fair Fare,9.991,5.986
+02/26/2022 07:00:00 AM,BX10,metrocard,Metrocard - Unlimited 7-Day,45.018,0.0
+02/26/2022 07:00:00 PM,BX40,metrocard,Metrocard - Fair Fare,5.002,0.999
+02/26/2022 08:00:00 AM,BX39,metrocard,Metrocard - Unlimited 30-Day,42.017,0.0
+02/26/2022 01:00:00 PM,M106,omny,OMNY - Other,0.0,0.0
+02/26/2022 05:00:00 PM,M11,metrocard,Metrocard - Full Fare,63.062,13.002
+02/26/2022 11:00:00 AM,M106,metrocard,Metrocard - Unlimited 7-Day,0.093,0.0
+02/26/2022 02:00:00 AM,M96,omny,OMNY - Full Fare,1.001,0.0
+02/26/2022 04:00:00 AM,Q06,metrocard,Metrocard - Full Fare,9.02,1.001
+02/26/2022 10:00:00 AM,Q06,metrocard,Metrocard - Other,3.004,0.0
