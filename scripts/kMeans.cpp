@@ -1,18 +1,27 @@
+//#include <boost/python.hpp>
 #include <iostream>
+#include <iomanip>
+#include <string>
 #include <vector>
 #include <cmath>
 #include <time.h>
+#include <sstream>
+#include <fstream>
+// #include "C:/Users/Anthony/AppData/Local/Programs/Python/Python313/include/Python.h"
+// #include "C:/Users/Anthony/AppData/Local/Programs/Python/Python313/include/cpython/pyatomic_gcc.h"
+//#include <filesystem> // Used for determining relative filepath of sample data
+
 
 // struct for the each of the points
 struct Point {
-    
+
     // cords of the point
     // for now, I am using the distance of each rider to calculate k-means, but we can easily change this to something else
     double x;
     double y;
-    
+
     // These two variables come from mta_subway_sample.csv
-    
+
     // Not sure if this will be used in final iteration of K-means function
     //int station_complex_id; // Used to determine which station we are looking at
 
@@ -26,7 +35,7 @@ Point calcCentroid(const std::vector<Point>& cluster) {
 
     double sumx = 0.0;
     double sumy = 0.0;
-    int riders;
+    double riders = 0.0;
     for (const Point p : cluster) { // Take each point in the cluster and add up their x, y positions and the number of riders
         sumx += p.x;
         sumy += p.y;
@@ -53,7 +62,7 @@ double dist(const Point& point1, const Point& point2) {
 
 // k will represent the number of clusters
 void k_means_cluster(const std::vector<Point>& points, int k) {
-    
+
     // Randomly choose initital centroids k
     // used the example from the cplusplus.com rand function page
     srand(time(NULL));              // initialize random seed
@@ -70,11 +79,11 @@ void k_means_cluster(const std::vector<Point>& points, int k) {
 
     // Loop until no points change cluster
     bool converged = false;
-    while(!converged) {
+    while (!converged) {
 
         for (int i = 0; i < points.size(); ++i) {
             int near_cent;
-            double minimum;
+            double minimum = 0.0;
 
             // Assign each point to the "closest" centroid
             for (int j = 0; j < centroids.size(); ++j) {
@@ -82,14 +91,14 @@ void k_means_cluster(const std::vector<Point>& points, int k) {
                 double distance = dist(points[i], centroids[j]);
 
                 // If there is another closer centroid
-                if(distance < minimum) {
+                if (distance < minimum) {
                     minimum = distance; // new closest
                     near_cent = j;      // new closest centroid
                 }
             }
 
             // If a point was assigned to a cluster that was not previously assigned to it, store it and converged is still true
-            if(clusters[i] != near_cent) {
+            if (clusters[i] != near_cent) {
                 clusters[i] = near_cent;
                 converged = true;
             }
@@ -102,7 +111,7 @@ void k_means_cluster(const std::vector<Point>& points, int k) {
 
             std::vector<Point> c_Points;    // cluster containing the points
             for (int j = 0; j < points.size(); ++j) {   // the points within the cluser
-                if(clusters[j] == i) {  // Check if point "i" is in cluster "j"
+                if (clusters[j] == i) {  // Check if point "i" is in cluster "j"
                     c_Points.push_back(points[i]); // push point "i" into the cluster
                 }
             }
@@ -110,11 +119,14 @@ void k_means_cluster(const std::vector<Point>& points, int k) {
         }
     }
 }
+extern "C" {
+    int My_Function(const std::vector<Point>& points, int k)
+    {
+        k_means_cluster(points, k);
+        return 0;
+    }
+}
 
 int main() {
-
-    /*
-    TODO: Update main to read from test data and verify k-means accuracy
-    */
     return 0;
 }
