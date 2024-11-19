@@ -1,9 +1,15 @@
 import numpy as np
 import pandas as pd
 import plotly.express as px
+from sklearn.cluster import DBSCAN
+from sklearn import preprocessing
 
 # dbscan function retuns a list of cluster labels, with -1 being the value for noise
-def dbscan(X, epsilon, minSamples):
+def dbscan(Xoriginal, eps, minSamples):
+    # Normalizing the data
+    X=(Xoriginal-Xoriginal.min())/(Xoriginal.max()-Xoriginal.min())
+    print(X)
+
     # initialize labels   
     labels = [0]*len(X)
 
@@ -12,53 +18,57 @@ def dbscan(X, epsilon, minSamples):
     
     # iterate through datapoints to find new center
     for xi in range(0, len(X)):
-    
+
+        # check if point xi has already been assigned to a cluster
         if not (labels[xi] == 0):
            continue
         
-        # find all neighbor points
-        NeighborPts = region_query(X, xi, epsilon)
+        # find all neighbors of point xi
+        neighbors = findNeighbors(X, xi, eps)
         
-        # check if datapoint is noise
-        if len(NeighborPts) < minSamples:
+        # check if datapoint is noise (doesn't have enough neighbors)
+        if len(neighbors) < minSamples:
             labels[xi] = -1
-           
+
+        # otherwise create a new cluster with center xi  
         else: 
            c += 1
-           grow_cluster(X, labels, xi, NeighborPts, c, epsilon, minSamples)
+           labels[xi] = c
+           expandCluster(X, labels, neighbors, c, eps, minSamples)
     
     return labels
 
 #looks for all the datapoints belonging to a new cluster
-def grow_cluster(X, labels, xi, NeighborPts, c, epsilon, minSamples):
+def expandCluster(X, labels, neighbors, c, eps, minSamples):
     
-    labels[xi] = c
     i = 0
-    while i < len(NeighborPts):    
+    while i < len(neighbors):    
         
-        # Get the next point from the queue.        
-        xn = NeighborPts[i]
+        # get next neighbor xn       
+        xn = neighbors[i]
        
-        # Relable noise datapoints
+        # check if xn was previously labeled as noise and relabel if needed
         if labels[xn] == -1:
            labels[xn] = c
         
+        #check if xn is unassigned to a cluster and create new label if needed
         elif labels[xn] == 0:
             labels[xn] = c
             # Find neighbors of xn
-            xnNeighborPts = region_query(X, xn, epsilon)
+            borderPoints= findNeighbors(X, xn, eps)
             
-            # Check if branch datapoint
-            if len(xnNeighborPts) >= minSamples:
-                NeighborPts = NeighborPts + xnNeighborPts
+            # Check if borderpoints should be added to list of neighbors
+            if len(borderPoints) >= minSamples:
+                neighbors = neighbors + borderPoints
         i += 1        
 
-# Find points that are within epsilon distance
-def region_query(X, xi, epsilon):
+# Find points that are within eps distance
+def findNeighbors(X, xi, eps):
     neighbors = []
     
+    # check if 2-norm is less than eps
     for xn in range(0, len(X)):
-        if np.linalg.norm(X.loc[xi] - X.loc[xn]) < epsilon:
+        if np.linalg.norm(X.loc[xi] - X.loc[xn]) < eps:
            neighbors.append(xn)
 
     return neighbors
@@ -70,14 +80,22 @@ sbwy['day']= sbwy['transit_timestamp'].dt.weekday
 sbwy['hour']= sbwy['transit_timestamp'].dt.hour
 sbwy.head()
 
-#set hyperparameters
-epsilon = 0.1
-minSamples = 10
+#set hyperparameters 
+eps = 0.3
+minSamples = 5
 
 # apply dbscan
-sbwy['cluster'] = dbscan(sbwy[['latitude','longitude','ridership','day','hour']], epsilon, minSamples)
+sbwy['cluster'] = dbscan(sbwy[['latitude','longitude','ridership','hour']], eps, minSamples)
 
 # plot results
-fig = px.scatter(sbwy, x='latitude', y='longitude', color='cluster', 
-                 title='DBSCAN Clustering Results')
+fig = px.scatter_mapbox(sbwy, lat='latitude', lon='longitude', color='cluster', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
+                        mapbox_style="carto-positron", title='DBSCAN Clustering Results')
 fig.show()
+
+# comparing with Scikit library
+scaler=preprocessing.MinMaxScaler()
+clustering = DBSCAN(eps=eps, min_samples=minSamples).fit(scaler.fit_transform(sbwy[['latitude','longitude','ridership','hour']]))
+sbwy['cluster_sklearn']=clustering.labels_
+fig2 = px.scatter_mapbox(sbwy, lat='latitude', lon='longitude', color='cluster_sklearn', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
+                        mapbox_style="carto-positron", title='Sklearn Clustering Results')
+fig2.show()
