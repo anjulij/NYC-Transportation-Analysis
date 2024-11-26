@@ -1,2 +1,10 @@
 data/csvs/*
 .vscode/*
+vcpkg/*
+matplotplusplus/*
+build/*
+build
+vcpkg-configuration.json
+vcpkg.json
+CMakeLists.txt
+CMakePresets.json
