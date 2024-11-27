@@ -3,12 +3,15 @@ import pandas as pd
 import plotly.express as px
 from sklearn.cluster import DBSCAN
 from sklearn import preprocessing
+from sklearn.neighbors import KDTree
 
 # dbscan function retuns a list of cluster labels, with -1 being the value for noise
 def dbscan(Xoriginal, eps, minSamples):
     # Normalizing the data
     X=(Xoriginal-Xoriginal.min())/(Xoriginal.max()-Xoriginal.min())
-    print(X)
+
+    #Create KD tree datastructure
+    tree=KDTree(X,leaf_size=15)
 
     # initialize labels   
     labels = [0]*len(X)
@@ -23,23 +26,23 @@ def dbscan(Xoriginal, eps, minSamples):
         if not (labels[xi] == 0):
            continue
         
-        # find all neighbors of point xi
-        neighbors = findNeighbors(X, xi, eps)
-        
-        # check if datapoint is noise (doesn't have enough neighbors)
-        if len(neighbors) < minSamples:
+        # find k neighbors of point xi 
+        distances, indices = tree.query(X.iloc[xi:xi+1,:], k=minSamples)
+
+        # check if datapoint is noise (k neighbors not within epsilon distance)
+        if( not all(d < eps for d in distances[0])):
             labels[xi] = -1
 
         # otherwise create a new cluster with center xi  
         else: 
            c += 1
            labels[xi] = c
-           expandCluster(X, labels, neighbors, c, eps, minSamples)
+           expandCluster(X, tree, labels, indices[0], c, eps, minSamples)
     
     return labels
 
 #looks for all the datapoints belonging to a new cluster
-def expandCluster(X, labels, neighbors, c, eps, minSamples):
+def expandCluster(X, tree, labels, neighbors, c, eps, minSamples):
     
     i = 0
     while i < len(neighbors):    
@@ -54,24 +57,15 @@ def expandCluster(X, labels, neighbors, c, eps, minSamples):
         #check if xn is unassigned to a cluster and create new label if needed
         elif labels[xn] == 0:
             labels[xn] = c
+
             # Find neighbors of xn
-            borderPoints= findNeighbors(X, xn, eps)
+            distances, indices = tree.query(X.iloc[xn:xn+1,:], k=minSamples)
             
             # Check if borderpoints should be added to list of neighbors
-            if len(borderPoints) >= minSamples:
-                neighbors = neighbors + borderPoints
+            if all(d < eps for d in distances[0]):
+                neighbors=np.append(neighbors, indices[0])
+            
         i += 1        
-
-# Find points that are within eps distance
-def findNeighbors(X, xi, eps):
-    neighbors = []
-    
-    # check if 2-norm is less than eps
-    for xn in range(0, len(X)):
-        if np.linalg.norm(X.loc[xi] - X.loc[xn]) < eps:
-           neighbors.append(xn)
-
-    return neighbors
 
 # read dataset and extract day and hour from timestamp
 sbwy = pd.read_csv("data/samples/mta_subway_sample.csv", usecols=[0, 7, 9, 10], header=0)
