@@ -42,7 +42,6 @@ Point calcCentroid(const std::vector<Point>& cluster) {
     }
     // Take the sums and divide by the total number of points
     return Point(sumx / cluster.size(), sumy / cluster.size(), riders / cluster.size());
-
 }
 
 // Determine the distance between two points
@@ -165,6 +164,21 @@ std::vector<std::string> csvParser(std::istream& str, std::vector<std::string>& 
     return result;
 }
 
+// If we have more clusters than
+std::vector<std::string> generateColors(int total) {
+    std::vector<std::string> colors = {
+        // Hex values for basic colors, Values taken from https://www.rapidtables.com/web/color/RGB_Color.html
+        "#FF0000", "#00FF00", "#0000FF", "#00FFFF", "#FF00FF", "#808080", "#808000", "#800080", "#008080", "#000080"
+    };
+    // if the amount of clusters is greater than the colors we already determined, create a new shade of color for the cluster
+    while (colors.size() < total) {
+        // There must be a better way to do this, the color is mainly shades of black and grey, but it ensures that matplotlibcpp doesn't throw runtime errors
+        colors.push_back("#" + std::string(6, '0' + (colors.size() % 10)));
+    }
+    return colors;
+}
+
+
 int main() {
     // Open the sample data
     std::ifstream file;
@@ -203,30 +217,27 @@ int main() {
         }
         count += 1;
     }
-    int k = 4; // Number of clusters
+
+    // Get user input for number of clusters
+    std::string input_k;
+    std::cout << "Enter the number of clusters" << std::endl;
+    std::cin >> input_k;
+    std::cout << "Loading..." << std::endl;
+    int k = std::stoi(input_k); // Number of clusters
     std::vector<double> x, y, riders;
     std::vector<int> clust; // Used to display different colors for each cluster
     std::vector<Point> centroids = k_means_cluster(points, k, clust);
 
     std::vector<std::vector<double>> cluster_x(k), cluster_y(k); // Store the x and y data into vectors with respect to each cluster
-    std::vector<double> x_centroids, y_centroids;
+    std::vector<double> x_centroids, y_centroids;                // Same as above but for the centroids
 
-    //std::cout << "X: " << iter.x << " Y: " << iter.y << " Ridership: " << iter.ridership << std::endl;
-
-    // Map of colors to distinguish which point belongs to which cluster
-    std::map<int, std::string> colors;
-    colors[0] = "ob";
-    colors[1] = "og";
-    colors[2] = "or";
-    colors[3] = "oc";
-    colors[4] = "om";
-    colors[5] = "oy";
-    colors[6] = "ok";
+    std::vector<std::string> colors = generateColors(k);        // Call the generateColors function with the amount of clusters we have
 
     // Loop through the points and add them to a vector in order to plot them
     for (int i = 0; i < points.size(); ++i) { 
         cluster_x[clust[i]].push_back(points[i].x);
         cluster_y[clust[i]].push_back(points[i].y);
+        riders.push_back(points[i].ridership);
     }
 
     // Loop through the clusters and push them into a vector
@@ -235,18 +246,30 @@ int main() {
         y_centroids.push_back(centroids[i].y);
     }
 
-    // Plot each of the points and ensure that points of the same cluster are color coordinated
+    // Plot each of the points and ensure that points of the same cluster are color, the larger the point, the more dense the ridership is.
+    // Graph is based on geolocation indicating where the most dense areas of travel are.
     for (int i = 0; i < k; ++i) {
-        matplotlibcpp::plot(cluster_x[i], cluster_y[i], colors[i]);
+        bool first = true; // Used to stop the legend for the graph to indicate the cluster EVERY POINT belongs to
+        for (int j = 0; j < cluster_x[i].size(); ++j) {
+            if(first) {
+                // This looks messy, but it is just calling the scatter function and whatever arguments the matplotlib from python can take
+                matplotlibcpp::scatter(std::vector<double>{cluster_x[i][j]}, std::vector<double>{cluster_y[i][j]}, riders[j], {{"color", colors[i]}, {"label", "Cluster " + std::to_string(i)}});
+                first = false;
+            }
+            else {
+                matplotlibcpp::scatter(std::vector<double>{cluster_x[i][j]}, std::vector<double>{cluster_y[i][j]}, riders[j], {{"color", colors[i]}});
+            }
+        }
     }
 
-    // Plot the centroids. They will be marked as a black X
-    matplotlibcpp::scatter(x_centroids, y_centroids, 100.0, {{"color", "k"}, {"marker", "x"}});
+    // Plot the centroids. They will be marked as a large black X
+    matplotlibcpp::scatter(x_centroids, y_centroids, 200.0, {{"color", "k"}, {"marker", "x"}, {"label", "Centroids"}});
 
     // Titles of axis and graph
     matplotlibcpp::xlabel("Longitude");
     matplotlibcpp::ylabel("Lattitude");
     matplotlibcpp::title("K-means clustering based on distance and ridership");
+    matplotlibcpp::legend();
     matplotlibcpp::show();
     
     return 0;

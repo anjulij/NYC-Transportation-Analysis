@@ -4,6 +4,7 @@ vcpkg/*
 matplotplusplus/*
 build/*
 build
+vcpkg/*
 vcpkg-configuration.json
 vcpkg.json
 CMakeLists.txt
