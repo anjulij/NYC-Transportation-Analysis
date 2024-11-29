@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
 import plotly.express as px
-from sklearn.cluster import DBSCAN
-from sklearn import preprocessing
 from sklearn.neighbors import KDTree
 
 # dbscan function retuns a list of cluster labels, with -1 being the value for noise
@@ -86,10 +84,3 @@ fig = px.scatter_mapbox(sbwy, lat='latitude', lon='longitude', color='cluster', 
                         mapbox_style="carto-positron", title='DBSCAN Clustering Results')
 fig.show()
 
-# comparing with Scikit library
-scaler=preprocessing.MinMaxScaler()
-clustering = DBSCAN(eps=eps, min_samples=minSamples).fit(scaler.fit_transform(sbwy[['latitude','longitude','ridership','hour']]))
-sbwy['cluster_sklearn']=clustering.labels_
-fig2 = px.scatter_mapbox(sbwy, lat='latitude', lon='longitude', color='cluster_sklearn', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
-                        mapbox_style="carto-positron", title='Sklearn Clustering Results')
-fig2.show()
