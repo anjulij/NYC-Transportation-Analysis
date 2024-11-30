@@ -49,7 +49,7 @@ def trim_csv_by_date(input_file, output_file, start_date, end_date, chunk_size=1
 
 # Define variables
 input_file = 'csvs/MTA_Subway_Hourly_Ridership__Beginning_July_2020.csv'
-output_file = 'MTA_Subway_Hourly_Ridership__Beginning_July_2020_trimmed.csv'
+output_file = 'csvs/MTA_Subway_Hourly_Ridership_2022.csv'
 start_date = '01-01-22 12:00:00 AM'
 end_date = '12-31-22 11:59:00 PM'
 
