@@ -1,5 +1,6 @@
 import psycopg2
 import pandas as pd
+from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
 
@@ -14,14 +15,9 @@ def fetch_data_from_db(output_csv=None):
 
     # Connect to PostgreSQL and fetch data
     try:
-        conn = psycopg2.connect(
-            host=DB_HOST,
-            database=DB_NAME,
-            user=DB_USER,
-            password=DB_PASSWORD
-        )
-        print("Connection successful!")
- 
+        engine = create_engine(f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}")
+
+        # Define query
         query = """
             SELECT 
                 transit_timestamp,
@@ -31,7 +27,9 @@ def fetch_data_from_db(output_csv=None):
             FROM 
                 subway_data;
         """
-        data = pd.read_sql(query, conn)
+
+        # Fetch data
+        data = pd.read_sql(query, con=engine)
 
         # Save to CSV
         if output_csv:
@@ -46,10 +44,6 @@ def fetch_data_from_db(output_csv=None):
     except Exception as e:
         print(f"Unexpected error: {e}")
         return None
-    finally:
-        if 'conn' in locals() and conn is not None:
-            conn.close()
-            print("Database connection closed.")
 
 # Fetch data and save it as a CSV
 fetch_data_from_db(output_csv="mta_subway_sample.csv")
