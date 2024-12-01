@@ -11,7 +11,7 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_NAME = os.getenv("DB_NAME")
 
 # File to load
-csv_file = 'csvs/mta_subway_hourly_ridership_2022_with_geom.csv'
+csv_file = 'csvs/MTA_Subway_Hourly_Ridership_2022.csv'
 
 # Connect to the database
 try:
