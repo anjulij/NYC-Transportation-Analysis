@@ -84,43 +84,39 @@ def expandCluster(X, tree, labels, neighbors, c, eps, minSamples):
 print(f"Fetching data")
 start_time = time.time()
 
-sbwy = fetch_data_from_db() 
+# Define the specific time frame (e.g., Monday between 8 AM and 10 AM)
+desired_day = 1
+start_hour = 8
+end_hour = 10
+
+sbwy = fetch_data_from_db(None, desired_day=desired_day, start_hour=start_hour, end_hour=end_hour)
+
+if sbwy is None or sbwy.empty:
+    raise ValueError("Filtered data is empty. Please verify the query parameters.")
 
 end_time = time.time()
 elapsed_time = end_time - start_time
 print(f"Fetch completed in {elapsed_time:.2f} seconds.")
 
-print(f"Parsing data")
-sbwy['transit_timestamp']= pd.to_datetime(sbwy['transit_timestamp'])
-sbwy['day']= sbwy['transit_timestamp'].dt.weekday
-sbwy['hour']= sbwy['transit_timestamp'].dt.hour
-sbwy.head()
-
-start_time = time.time()
-print(f"Filtering data")
-# Define the specific time frame (e.g., Monday between 8 AM and 10 AM)
-desired_day = 0
-start_hour = 8
-end_hour = 10
-
-# Filter data for the desired time frame
-filtered_sbwy = sbwy[(sbwy['day'] == desired_day) & (sbwy['hour'] >= start_hour) & (sbwy['hour'] < end_hour)]
-
-end_time = time.time()
-elapsed_time = end_time - start_time
-print(f"Filter completed in {elapsed_time:.2f} seconds.")
+print("Parsing data")
+try:
+    sbwy['transit_timestamp'] = pd.to_datetime(sbwy['transit_timestamp'])
+    sbwy['day'] = sbwy['transit_timestamp'].dt.weekday
+    sbwy['hour'] = sbwy['transit_timestamp'].dt.hour
+except Exception as e:
+    raise ValueError(f"Error parsing data: {e}")
 
 #set hyperparameters 
 eps = 0.3
 minSamples = 5
 
-print(f"Applying DBSCAN to data from day {desired_day} between {start_hour}:00 and {end_hour}:00")
 # apply dbscan
-filtered_sbwy.loc[:, 'cluster'] = dbscan(filtered_sbwy[['latitude', 'longitude', 'ridership', 'hour']], eps, minSamples)
+print(f"Applying DBSCAN to data from day {desired_day} between {start_hour}:00 and {end_hour}:00")
+sbwy.loc[:, 'cluster'] = dbscan(sbwy[['latitude', 'longitude', 'ridership', 'hour']], eps=0.3, minSamples=5)
 
 print(f"Plotting results")
 # plot results
-fig = px.scatter_mapbox(filtered_sbwy, lat='latitude', lon='longitude', color='cluster', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
+fig = px.scatter_mapbox(sbwy, lat='latitude', lon='longitude', color='cluster', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
                         mapbox_style="carto-positron", title=f'DBSCAN Clustering Results {desired_day}, {start_hour}:00 - {end_hour}:00')
 
 fig.show()
