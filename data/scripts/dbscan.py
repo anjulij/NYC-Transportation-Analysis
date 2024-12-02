@@ -51,7 +51,7 @@ def dbscan(Xoriginal, eps, minSamples):
     
     end_time_dbscan = time.time()
     elapsed_time_dbscan = end_time_dbscan - start_time_dbscan
-    print(f"Fetch completed in {elapsed_time_dbscan:.2f} seconds.")
+    print(f"DBSCAN completed in {elapsed_time_dbscan:.2f} seconds.")
     
     return labels
 
@@ -59,7 +59,7 @@ def dbscan(Xoriginal, eps, minSamples):
 def expandCluster(X, tree, labels, neighbors, c, eps, minSamples):
     i = 0
     while i < len(neighbors):    
-        
+
         # get next neighbor xn       
         xn = neighbors[i]
        
@@ -96,16 +96,31 @@ sbwy['day']= sbwy['transit_timestamp'].dt.weekday
 sbwy['hour']= sbwy['transit_timestamp'].dt.hour
 sbwy.head()
 
+start_time = time.time()
+print(f"Filtering data")
+# Define the specific time frame (e.g., Monday between 8 AM and 10 AM)
+desired_day = 0
+start_hour = 8
+end_hour = 10
+
+# Filter data for the desired time frame
+filtered_sbwy = sbwy[(sbwy['day'] == desired_day) & (sbwy['hour'] >= start_hour) & (sbwy['hour'] < end_hour)]
+
+end_time = time.time()
+elapsed_time = end_time - start_time
+print(f"Filter completed in {elapsed_time:.2f} seconds.")
+
 #set hyperparameters 
 eps = 0.3
 minSamples = 5
 
-print(f"Applying DBSCAN")
+print(f"Applying DBSCAN to data from day {desired_day} between {start_hour}:00 and {end_hour}:00")
 # apply dbscan
-sbwy['cluster'] = dbscan(sbwy[['latitude','longitude','ridership','hour']], eps, minSamples)
+filtered_sbwy.loc[:, 'cluster'] = dbscan(filtered_sbwy[['latitude', 'longitude', 'ridership', 'hour']], eps, minSamples)
 
 print(f"Plotting results")
 # plot results
-fig = px.scatter_mapbox(sbwy, lat='latitude', lon='longitude', color='cluster', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
-                        mapbox_style="carto-positron", title='DBSCAN Clustering Results')
+fig = px.scatter_mapbox(filtered_sbwy, lat='latitude', lon='longitude', color='cluster', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
+                        mapbox_style="carto-positron", title=f'DBSCAN Clustering Results {desired_day}, {start_hour}:00 - {end_hour}:00')
+
 fig.show()
