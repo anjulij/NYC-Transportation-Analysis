@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS postgis;
+
 CREATE TABLE subway_data (
     transit_timestamp TIMESTAMP,
     transit_mode TEXT,
