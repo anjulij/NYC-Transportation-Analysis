@@ -36,11 +36,11 @@ def dbscan(Xoriginal, eps, minSamples):
         if not (labels[xi] == 0):
            continue
         
-        # find k neighbors of point xi 
-        distances, indices = tree.query(X.iloc[xi:xi+1,:], k=minSamples)
+        # find neighbors within distance epsilon of xi 
+        indices = tree.query_radius(X.iloc[xi:xi+1,:], r=eps)  
 
-        # check if datapoint is noise (k neighbors not within epsilon distance)
-        if( not all(d < eps for d in distances[0])):
+        # check if datapoint is noise (not enough neighbors)
+        if( len(indices[0]) < minSamples):
             labels[xi] = -1
 
         # otherwise create a new cluster with center xi  
@@ -72,10 +72,10 @@ def expandCluster(X, tree, labels, neighbors, c, eps, minSamples):
             labels[xn] = c
 
             # Find neighbors of xn
-            distances, indices = tree.query(X.iloc[xn:xn+1,:], k=minSamples)
+            indices = tree.query_radius(X.iloc[xn:xn+1,:], r=eps) 
             
             # Check if borderpoints should be added to list of neighbors
-            if all(d < eps for d in distances[0]):
+            if (len(indices[0]) >= minSamples):
                 neighbors=np.append(neighbors, indices[0])
             
         i += 1        
