@@ -2,6 +2,10 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 from sklearn.neighbors import KDTree
+import os
+import sys
+
+from ..data.scripts.query_data import fetch_data_from_db
 
 # dbscan function retuns a list of cluster labels, with -1 being the value for noise
 def dbscan(Xoriginal, eps, minSamples):
@@ -65,8 +69,9 @@ def expandCluster(X, tree, labels, neighbors, c, eps, minSamples):
             
         i += 1        
 
-# read dataset and extract day and hour from timestamp
-sbwy = pd.read_csv("data/samples/mta_subway_sample.csv", usecols=[0, 7, 9, 10], header=0)
+# Fetch data from PostgreSQL and extract day and hour from timestamp
+sbwy = fetch_data_from_db() 
+
 sbwy['transit_timestamp']= pd.to_datetime(sbwy['transit_timestamp'])
 sbwy['day']= sbwy['transit_timestamp'].dt.weekday
 sbwy['hour']= sbwy['transit_timestamp'].dt.hour
