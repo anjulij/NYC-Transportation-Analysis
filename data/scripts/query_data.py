@@ -46,4 +46,4 @@ def fetch_data_from_db(output_csv=None):
         return None
 
 # Fetch data and save it as a CSV
-fetch_data_from_db(output_csv="mta_subway_sample.csv")
+# fetch_data_from_db(output_csv="mta_subway_sample.csv")
