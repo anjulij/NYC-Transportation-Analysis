@@ -1,16 +1,9 @@
-/* Root variables for colors */
 :root {
-    --primary-bg: linear-gradient(135deg, #1e1e2f, #383854);
-    --navbar-bg: rgb(33, 33, 33);
-    --navbar-hover-bg: rgb(80, 80, 165);
-    --content-bg: rgb(255, 255, 255);
-    --content-border: rgb(255, 255, 255);
-    --bottom-bar-bg: rgb(66, 66, 66);
-    --text-color: rgb(224, 224, 224);
-    --hover-text-color: rgb(255, 255, 255);
-    --shadow-color: rgb(0, 0, 0);
+    --background-color: #212121;
+    --bottom-bar-color: #424242;
+    --text-color: #fff;
+    --border-color: #fff;
 }
-
 /* Reset some default browser styles */
 body, h1, p, nav, #bottombar {
     margin: 0;
@@ -25,11 +18,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: var(--primary-bg);
-    color: var(--text-color);
+    min-height: 100vh;
+    background-color: var(--background-color);
 }
-
+#about-content {
+    text-align: justify;
+    overflow-y: auto;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;    
+    color: var(--text-color);
+    /* font-family: 'Literata', serif; */
+    line-height: 1.6; 
+}
 /* Navbar styling */
 nav {
     position: fixed;
@@ -39,31 +40,31 @@ nav {
     padding: 0 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: var(--navbar-bg);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px var(--shadow-color);
+    justify-content: flex-start;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--border-color);
     z-index: 1000;
 }
 
 nav a {
     font-family: inherit;
-    font-size: 1rem;
-    color: var(--text-color);
-    margin: 0 16px;
+    font-size: 1em;
+    color: var(--border-color);
+    margin: 0 32px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    padding: 10px;
+    border: 2px hidden;
+    border-radius: 10px;
 }
 
 nav a:hover {
-    background-color: var(--navbar-hover-bg);
-    color: var(--hover-text-color);
-    border: 1px solid var(--hover-text-color);
+    background-color: var(--bottom-bar-color);
+}
+
+nav a#about-link {
+    margin-left: auto;
 }
 
 /* Content styling */
@@ -75,8 +76,6 @@ nav a:hover {
     max-width: 1200px;
     min-width: 600px;
     padding: 20px;
-    margin-top: 80px;
-    text-align: center;
     color: var(--text-color);
 }
 
@@ -85,13 +84,12 @@ nav a:hover {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 10px 20px;
-    background: var(--bottom-bar-bg);
-    color: var(--text-color);
+    padding: 10px 80px;
+    background-color: var(--bottom-bar-color);
+    color: var(--border-color);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    box-shadow: 0px -4px 10px var(--shadow-color);
 }
 
 #bottombar heart-icon {
