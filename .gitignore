@@ -2,3 +2,4 @@ data/csvs/*
 .env
 tests/*
 build/*
+website/node_modules/*

@@ -1,3 +1,4 @@
+import calendar
 import random
 import time
 import numpy as np
@@ -19,7 +20,8 @@ def k_means(points, k, max_iter=100):
     converged = False
     iteration = 0
 
-    print(f"Starting K-means clustering with k={k} and max_iter={max_iter}.")
+    total_points = len(points)
+    print(f"Total points: {total_points}")
     start_time = time.time()
 
     while not converged and iteration < max_iter:
@@ -45,8 +47,9 @@ def k_means(points, k, max_iter=100):
     return clusters, centroids
 
 # Fetch data from PostgreSQL
-print("Fetching data...")
-desired_day = 1
+print("Fetching data")
+start_time = time.time()
+desired_day = 0
 start_hour = 8
 end_hour = 10
 
@@ -55,7 +58,11 @@ sbwy = fetch_data_from_db(None, desired_day=desired_day, start_hour=start_hour, 
 if sbwy is None or sbwy.empty:
     raise ValueError("Filtered data is empty. Please verify the query parameters.")
 
-print("Parsing data...")
+end_time = time.time()
+elapsed_time = end_time - start_time
+print(f"Fetch completed in {elapsed_time:.2f} seconds.")
+
+print("Parsing data")
 try:
     sbwy['transit_timestamp'] = pd.to_datetime(sbwy['transit_timestamp'])
     sbwy['day'] = sbwy['transit_timestamp'].dt.weekday
@@ -68,7 +75,7 @@ data = sbwy[['latitude', 'longitude', 'ridership']].dropna()
 
 # Set hyperparameters
 k = 5
-print(f"Applying K-means to data from day {desired_day} between {start_hour}:00 and {end_hour}:00...")
+print(f"Applying K-means to data from day {desired_day} between {start_hour}:00 and {end_hour}:00")
 clusters, centroids = k_means(data, k)
 
 # Add cluster labels to data
@@ -78,18 +85,18 @@ sbwy.loc[data.index, 'cluster'] = clusters
 centroids_df = pd.DataFrame(centroids, columns=['latitude', 'longitude', 'ridership'])
 
 # Plot results
-print("Plotting results...")
+day_name = calendar.day_name[desired_day]
 fig = px.scatter_mapbox(
     sbwy, 
     lat='latitude', 
     lon='longitude', 
     color='cluster', 
     size='ridership', 
-    color_continuous_scale=px.colors.sequential.Blackbody, 
+    color_continuous_scale=px.colors.sequential.Magma, 
     size_max=15, 
     zoom=10,
-    mapbox_style="carto-positron", 
-    title=f'K-means Clustering Results {desired_day}, {start_hour}:00 - {end_hour}:00'
+    mapbox_style='carto-darkmatter',     
+    title=f'K-means Clustering Results {day_name}, {start_hour}:00 - {end_hour}:00'
 )
 
 # Add centroids to the map
@@ -101,4 +108,24 @@ fig.add_scattermapbox(
     name='Centroids'
 )
 
+# Set transparent backgrounds and white font for dark mode
+fig.update_layout(
+    paper_bgcolor='rgba(0,0,0,0)', 
+    plot_bgcolor='rgba(0,0,0,0)', 
+    font=dict(color='#ffffff'),  
+    title_font=dict(color='#ffffff'),
+    # Border
+    shapes=[
+        dict(
+            type="rect",
+            x0=0, y0=0, x1=1, y1=1,
+            xref="paper", yref="paper",
+            line=dict(color="white", width=3)
+        )
+    ]
+)
+
 fig.show()
+fig.write_html(f"../../website/src/assets/generated_plots/kmeans_{day_name}.html")
+
+print(f"Plot saved to kmeans_{day_name}.html")
