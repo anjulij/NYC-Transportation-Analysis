@@ -79,6 +79,33 @@ nav a#about-link {
     color: var(--text-color);
 }
 
+/* Button container styling */
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Individual button styling */
+#button-container button {
+    font-family: inherit;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--bottom-bar-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button-container button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
 /* Bottom bar styling */
 #bottombar {
     position: fixed;
