@@ -85,6 +85,7 @@ print(f"Fetching data")
 start_time = time.time()
 
 sbwy = fetch_data_from_db() 
+# sbwy = pd.read_csv('C:/Users/Soto/Documents/GitHub/NYC-Transportation-Analysis/data/samples/mta_subway_sample.csv')
 
 end_time = time.time()
 elapsed_time = end_time - start_time
