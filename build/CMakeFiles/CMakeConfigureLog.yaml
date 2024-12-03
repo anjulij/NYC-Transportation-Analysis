@@ -1,0 +1,1574 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.11.2+c078802d4 for .NET Framework
+      Build started 11/26/2024 8:48:48 AM.
+      
+      Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.81
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/3.30.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.11.2+c078802d4 for .NET Framework
+      Build started 11/26/2024 8:48:49 AM.
+      
+      Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.80
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/3.30.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-er1j6t"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-er1j6t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-er1j6t'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2d1ac.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:48:50 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-er1j6t\\cmTC_2d1ac.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_2d1ac.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-er1j6t\\Debug\\".
+          Creating directory "cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2d1ac.dir\\Debug\\\\" /Fd"cmTC_2d1ac.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2d1ac.dir\\Debug\\\\" /Fd"cmTC_2d1ac.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-er1j6t\\Debug\\cmTC_2d1ac.exe" /INCREMENTAL /ILK:"cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-er1j6t/Debug/cmTC_2d1ac.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-er1j6t/Debug/cmTC_2d1ac.lib" /MACHINE:X64  /machine:x64 cmTC_2d1ac.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_2d1ac.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-er1j6t\\Debug\\cmTC_2d1ac.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-er1j6t\\Debug\\cmTC_2d1ac.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.tlog\\cmTC_2d1ac.write.1u.tlog" "cmTC_2d1ac.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-er1j6t\\Debug\\cmTC_2d1ac.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.tlog\\cmTC_2d1ac.write.1u.tlog" "cmTC_2d1ac.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-er1j6t\\Debug\\cmTC_2d1ac.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.tlog\\cmTC_2d1ac.write.1u.tlog" "cmTC_2d1ac.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.tlog\\unsuccessfulbuild".
+          Touching "cmTC_2d1ac.dir\\Debug\\cmTC_2d1ac.tlog\\cmTC_2d1ac.lastbuildstate".
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-er1j6t\\cmTC_2d1ac.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.76
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34120.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-v8awsx"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-v8awsx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-v8awsx'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e4668.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:48:51 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v8awsx\\cmTC_e4668.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_e4668.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v8awsx\\Debug\\".
+          Creating directory "cmTC_e4668.dir\\Debug\\cmTC_e4668.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e4668.dir\\Debug\\cmTC_e4668.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e4668.dir\\Debug\\cmTC_e4668.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e4668.dir\\Debug\\\\" /Fd"cmTC_e4668.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e4668.dir\\Debug\\\\" /Fd"cmTC_e4668.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v8awsx\\Debug\\cmTC_e4668.exe" /INCREMENTAL /ILK:"cmTC_e4668.dir\\Debug\\cmTC_e4668.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-v8awsx/Debug/cmTC_e4668.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-v8awsx/Debug/cmTC_e4668.lib" /MACHINE:X64  /machine:x64 cmTC_e4668.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_e4668.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v8awsx\\Debug\\cmTC_e4668.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v8awsx\\Debug\\cmTC_e4668.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e4668.dir\\Debug\\cmTC_e4668.tlog\\cmTC_e4668.write.1u.tlog" "cmTC_e4668.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v8awsx\\Debug\\cmTC_e4668.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e4668.dir\\Debug\\cmTC_e4668.tlog\\cmTC_e4668.write.1u.tlog" "cmTC_e4668.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v8awsx\\Debug\\cmTC_e4668.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_e4668.dir\\Debug\\cmTC_e4668.tlog\\cmTC_e4668.write.1u.tlog" "cmTC_e4668.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_e4668.dir\\Debug\\cmTC_e4668.tlog\\unsuccessfulbuild".
+          Touching "cmTC_e4668.dir\\Debug\\cmTC_e4668.tlog\\cmTC_e4668.lastbuildstate".
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v8awsx\\cmTC_e4668.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.81
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34120.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:377 (check_function_exists)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:421 (check_blas_libraries)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-0w77q9"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-0w77q9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-0w77q9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_731f6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:56:59 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\cmTC_731f6.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_731f6.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\Debug\\".
+          Creating directory "cmTC_731f6.dir\\Debug\\cmTC_731f6.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_731f6.dir\\Debug\\cmTC_731f6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_731f6.dir\\Debug\\cmTC_731f6.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_731f6.dir\\Debug\\\\" /Fd"cmTC_731f6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_731f6.dir\\Debug\\\\" /Fd"cmTC_731f6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\Debug\\cmTC_731f6.exe" /INCREMENTAL /ILK:"cmTC_731f6.dir\\Debug\\cmTC_731f6.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-0w77q9/Debug/cmTC_731f6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-0w77q9/Debug/cmTC_731f6.lib" /MACHINE:X64  /machine:x64 cmTC_731f6.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol sgemm_ referenced in function main [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\cmTC_731f6.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\Debug\\cmTC_731f6.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\cmTC_731f6.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\cmTC_731f6.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\cmTC_731f6.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol sgemm_ referenced in function main [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\cmTC_731f6.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\Debug\\cmTC_731f6.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0w77q9\\cmTC_731f6.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.46
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:473 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-5zf7jw"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-5zf7jw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-5zf7jw'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9362d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:57:00 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\cmTC_9362d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9362d.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\Debug\\".
+          Creating directory "cmTC_9362d.dir\\Debug\\cmTC_9362d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9362d.dir\\Debug\\cmTC_9362d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9362d.dir\\Debug\\cmTC_9362d.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9362d.dir\\Debug\\\\" /Fd"cmTC_9362d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\src.c"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9362d.dir\\Debug\\\\" /Fd"cmTC_9362d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\src.c"
+          src.c
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\cmTC_9362d.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\cmTC_9362d.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\cmTC_9362d.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zf7jw\\cmTC_9362d.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.30
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:473 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-czmm4t"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-czmm4t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-czmm4t'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_72a9a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:57:00 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\cmTC_72a9a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_72a9a.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\Debug\\".
+          Creating directory "cmTC_72a9a.dir\\Debug\\cmTC_72a9a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_72a9a.dir\\Debug\\cmTC_72a9a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_72a9a.dir\\Debug\\cmTC_72a9a.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72a9a.dir\\Debug\\\\" /Fd"cmTC_72a9a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_72a9a.dir\\Debug\\\\" /Fd"cmTC_72a9a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\Debug\\cmTC_72a9a.exe" /INCREMENTAL /ILK:"cmTC_72a9a.dir\\Debug\\cmTC_72a9a.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-czmm4t/Debug/cmTC_72a9a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-czmm4t/Debug/cmTC_72a9a.lib" /MACHINE:X64  /machine:x64 cmTC_72a9a.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\cmTC_72a9a.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\cmTC_72a9a.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\cmTC_72a9a.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-czmm4t\\cmTC_72a9a.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.41
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:473 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-gpmk2g"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-gpmk2g"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-gpmk2g'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0e38c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:57:01 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\cmTC_0e38c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0e38c.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\Debug\\".
+          Creating directory "cmTC_0e38c.dir\\Debug\\cmTC_0e38c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0e38c.dir\\Debug\\cmTC_0e38c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0e38c.dir\\Debug\\cmTC_0e38c.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0e38c.dir\\Debug\\\\" /Fd"cmTC_0e38c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0e38c.dir\\Debug\\\\" /Fd"cmTC_0e38c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\Debug\\cmTC_0e38c.exe" /INCREMENTAL /ILK:"cmTC_0e38c.dir\\Debug\\cmTC_0e38c.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-gpmk2g/Debug/cmTC_0e38c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-gpmk2g/Debug/cmTC_0e38c.lib" /MACHINE:X64  /machine:x64 cmTC_0e38c.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\cmTC_0e38c.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\cmTC_0e38c.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\cmTC_0e38c.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gpmk2g\\cmTC_0e38c.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.46
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-9ofsl7"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-9ofsl7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-9ofsl7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_25fea.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:57:02 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_25fea.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\Debug\\".
+          Creating directory "cmTC_25fea.dir\\Debug\\cmTC_25fea.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_25fea.dir\\Debug\\cmTC_25fea.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_25fea.dir\\Debug\\cmTC_25fea.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_25fea.dir\\Debug\\\\" /Fd"cmTC_25fea.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_25fea.dir\\Debug\\\\" /Fd"cmTC_25fea.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx"
+          src.cxx
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9ofsl7\\cmTC_25fea.vcxproj]
+        
+            0 Warning(s)
+            6 Error(s)
+        
+        Time Elapsed 00:00:00.49
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:269 (_check_cxx_compiler_attribute)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-lsyxz7"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-lsyxz7"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-lsyxz7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f649d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:57:03 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\cmTC_f649d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f649d.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\Debug\\".
+          Creating directory "cmTC_f649d.dir\\Debug\\cmTC_f649d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f649d.dir\\Debug\\cmTC_f649d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f649d.dir\\Debug\\cmTC_f649d.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f649d.dir\\Debug\\\\" /Fd"cmTC_f649d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f649d.dir\\Debug\\\\" /Fd"cmTC_f649d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\src.cxx"
+          src.cxx
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\src.cxx(2,25): warning C4996: 'somefunc': was declared deprecated [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\cmTC_f649d.vcxproj]
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\Debug\\cmTC_f649d.exe" /INCREMENTAL /ILK:"cmTC_f649d.dir\\Debug\\cmTC_f649d.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-lsyxz7/Debug/cmTC_f649d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-lsyxz7/Debug/cmTC_f649d.lib" /MACHINE:X64  /machine:x64 cmTC_f649d.dir\\Debug\\src.obj
+          cmTC_f649d.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\Debug\\cmTC_f649d.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\Debug\\cmTC_f649d.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f649d.dir\\Debug\\cmTC_f649d.tlog\\cmTC_f649d.write.1u.tlog" "cmTC_f649d.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\Debug\\cmTC_f649d.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f649d.dir\\Debug\\cmTC_f649d.tlog\\cmTC_f649d.write.1u.tlog" "cmTC_f649d.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\Debug\\cmTC_f649d.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f649d.dir\\Debug\\cmTC_f649d.tlog\\cmTC_f649d.write.1u.tlog" "cmTC_f649d.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_f649d.dir\\Debug\\cmTC_f649d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_f649d.dir\\Debug\\cmTC_f649d.tlog\\cmTC_f649d.lastbuildstate".
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\cmTC_f649d.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\cmTC_f649d.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\src.cxx(2,25): warning C4996: 'somefunc': was declared deprecated [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lsyxz7\\cmTC_f649d.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.13
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:141 (check_symbol_exists)"
+    checks:
+      - "Looking for __fbufsize"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-b2led5"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-b2led5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "HAVE_FBUFSIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-b2led5'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f880e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 8:57:04 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\cmTC_f880e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_f880e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\Debug\\".
+          Creating directory "cmTC_f880e.dir\\Debug\\cmTC_f880e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_f880e.dir\\Debug\\cmTC_f880e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_f880e.dir\\Debug\\cmTC_f880e.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f880e.dir\\Debug\\\\" /Fd"cmTC_f880e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f880e.dir\\Debug\\\\" /Fd"cmTC_f880e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'stdio_ext.h': No such file or directory [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\cmTC_f880e.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\cmTC_f880e.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\cmTC_f880e.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'stdio_ext.h': No such file or directory [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b2led5\\cmTC_f880e.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.49
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.11.2+c078802d4 for .NET Framework
+      Build started 11/26/2024 9:01:25 AM.
+      
+      Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdC.tlog\\CompilerIdC.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.80
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/3.30.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.11.2+c078802d4 for .NET Framework
+      Build started 11/26/2024 9:01:26 AM.
+      
+      Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      VcpkgTripletSelection:
+        Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+        Using normalized configuration "Release"
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      AppLocalFromInstalled:
+        pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+        'pwsh.exe' is not recognized as an internal or external command,
+        operable program or batch file.
+        The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"" exited with code 9009.
+        "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\bin" "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.write.1u.tlog" "Debug\\vcpkg.applocal.log"
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.78
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/3.30.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-3fgjdj"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-3fgjdj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-3fgjdj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3346f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:27 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3fgjdj\\cmTC_3346f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_3346f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3fgjdj\\Debug\\".
+          Creating directory "cmTC_3346f.dir\\Debug\\cmTC_3346f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_3346f.dir\\Debug\\cmTC_3346f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3346f.dir\\Debug\\cmTC_3346f.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3346f.dir\\Debug\\\\" /Fd"cmTC_3346f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3346f.dir\\Debug\\\\" /Fd"cmTC_3346f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3fgjdj\\Debug\\cmTC_3346f.exe" /INCREMENTAL /ILK:"cmTC_3346f.dir\\Debug\\cmTC_3346f.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-3fgjdj/Debug/cmTC_3346f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-3fgjdj/Debug/cmTC_3346f.lib" /MACHINE:X64  /machine:x64 cmTC_3346f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_3346f.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3fgjdj\\Debug\\cmTC_3346f.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3fgjdj\\Debug\\cmTC_3346f.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_3346f.dir\\Debug\\cmTC_3346f.tlog\\cmTC_3346f.write.1u.tlog" "cmTC_3346f.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3fgjdj\\Debug\\cmTC_3346f.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_3346f.dir\\Debug\\cmTC_3346f.tlog\\cmTC_3346f.write.1u.tlog" "cmTC_3346f.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3fgjdj\\Debug\\cmTC_3346f.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_3346f.dir\\Debug\\cmTC_3346f.tlog\\cmTC_3346f.write.1u.tlog" "cmTC_3346f.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_3346f.dir\\Debug\\cmTC_3346f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_3346f.dir\\Debug\\cmTC_3346f.tlog\\cmTC_3346f.lastbuildstate".
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3fgjdj\\cmTC_3346f.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.77
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34120.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-dlsy9y"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-dlsy9y"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-dlsy9y'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d7a06.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:28 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlsy9y\\cmTC_d7a06.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_d7a06.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlsy9y\\Debug\\".
+          Creating directory "cmTC_d7a06.dir\\Debug\\cmTC_d7a06.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d7a06.dir\\Debug\\cmTC_d7a06.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d7a06.dir\\Debug\\cmTC_d7a06.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d7a06.dir\\Debug\\\\" /Fd"cmTC_d7a06.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d7a06.dir\\Debug\\\\" /Fd"cmTC_d7a06.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlsy9y\\Debug\\cmTC_d7a06.exe" /INCREMENTAL /ILK:"cmTC_d7a06.dir\\Debug\\cmTC_d7a06.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-dlsy9y/Debug/cmTC_d7a06.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-dlsy9y/Debug/cmTC_d7a06.lib" /MACHINE:X64  /machine:x64 cmTC_d7a06.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d7a06.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlsy9y\\Debug\\cmTC_d7a06.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlsy9y\\Debug\\cmTC_d7a06.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_d7a06.dir\\Debug\\cmTC_d7a06.tlog\\cmTC_d7a06.write.1u.tlog" "cmTC_d7a06.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlsy9y\\Debug\\cmTC_d7a06.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_d7a06.dir\\Debug\\cmTC_d7a06.tlog\\cmTC_d7a06.write.1u.tlog" "cmTC_d7a06.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlsy9y\\Debug\\cmTC_d7a06.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_d7a06.dir\\Debug\\cmTC_d7a06.tlog\\cmTC_d7a06.write.1u.tlog" "cmTC_d7a06.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_d7a06.dir\\Debug\\cmTC_d7a06.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d7a06.dir\\Debug\\cmTC_d7a06.tlog\\cmTC_d7a06.lastbuildstate".
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dlsy9y\\cmTC_d7a06.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.80
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34120.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:377 (check_function_exists)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:421 (check_blas_libraries)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-hmtmdl"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-hmtmdl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-hmtmdl'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1e7c7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:32 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\cmTC_1e7c7.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1e7c7.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\Debug\\".
+          Creating directory "cmTC_1e7c7.dir\\Debug\\cmTC_1e7c7.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1e7c7.dir\\Debug\\cmTC_1e7c7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1e7c7.dir\\Debug\\cmTC_1e7c7.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1e7c7.dir\\Debug\\\\" /Fd"cmTC_1e7c7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=sgemm_ /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1e7c7.dir\\Debug\\\\" /Fd"cmTC_1e7c7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\Debug\\cmTC_1e7c7.exe" /INCREMENTAL /ILK:"cmTC_1e7c7.dir\\Debug\\cmTC_1e7c7.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-hmtmdl/Debug/cmTC_1e7c7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-hmtmdl/Debug/cmTC_1e7c7.lib" /MACHINE:X64  /machine:x64 cmTC_1e7c7.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol sgemm_ referenced in function main [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\cmTC_1e7c7.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\Debug\\cmTC_1e7c7.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\cmTC_1e7c7.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\cmTC_1e7c7.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\cmTC_1e7c7.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol sgemm_ referenced in function main [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\cmTC_1e7c7.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\Debug\\cmTC_1e7c7.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hmtmdl\\cmTC_1e7c7.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:00.42
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:473 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-fvyzri"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-fvyzri"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-fvyzri'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_95a2c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:33 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\cmTC_95a2c.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_95a2c.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\Debug\\".
+          Creating directory "cmTC_95a2c.dir\\Debug\\cmTC_95a2c.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_95a2c.dir\\Debug\\cmTC_95a2c.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_95a2c.dir\\Debug\\cmTC_95a2c.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_95a2c.dir\\Debug\\\\" /Fd"cmTC_95a2c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\src.c"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_95a2c.dir\\Debug\\\\" /Fd"cmTC_95a2c.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\src.c"
+          src.c
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\cmTC_95a2c.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\cmTC_95a2c.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\cmTC_95a2c.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fvyzri\\cmTC_95a2c.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.29
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:473 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-zr9ydr"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-zr9ydr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-zr9ydr'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_924d2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:33 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\cmTC_924d2.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_924d2.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\Debug\\".
+          Creating directory "cmTC_924d2.dir\\Debug\\cmTC_924d2.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_924d2.dir\\Debug\\cmTC_924d2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_924d2.dir\\Debug\\cmTC_924d2.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_924d2.dir\\Debug\\\\" /Fd"cmTC_924d2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_924d2.dir\\Debug\\\\" /Fd"cmTC_924d2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\Debug\\cmTC_924d2.exe" /INCREMENTAL /ILK:"cmTC_924d2.dir\\Debug\\cmTC_924d2.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-zr9ydr/Debug/cmTC_924d2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-zr9ydr/Debug/cmTC_924d2.lib" /MACHINE:X64  /machine:x64 cmTC_924d2.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\cmTC_924d2.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\cmTC_924d2.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\cmTC_924d2.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zr9ydr\\cmTC_924d2.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.38
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindBLAS.cmake:473 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-ixg7mb"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-ixg7mb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-ixg7mb'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7eb73.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:34 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\cmTC_7eb73.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7eb73.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\Debug\\".
+          Creating directory "cmTC_7eb73.dir\\Debug\\cmTC_7eb73.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7eb73.dir\\Debug\\cmTC_7eb73.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7eb73.dir\\Debug\\cmTC_7eb73.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7eb73.dir\\Debug\\\\" /Fd"cmTC_7eb73.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7eb73.dir\\Debug\\\\" /Fd"cmTC_7eb73.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\Debug\\cmTC_7eb73.exe" /INCREMENTAL /ILK:"cmTC_7eb73.dir\\Debug\\cmTC_7eb73.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-ixg7mb/Debug/cmTC_7eb73.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-ixg7mb/Debug/cmTC_7eb73.lib" /MACHINE:X64  /machine:x64 cmTC_7eb73.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\cmTC_7eb73.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\cmTC_7eb73.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\cmTC_7eb73.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ixg7mb\\cmTC_7eb73.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.39
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-nckh4f"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-nckh4f"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-nckh4f'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_42781.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:35 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_42781.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\Debug\\".
+          Creating directory "cmTC_42781.dir\\Debug\\cmTC_42781.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_42781.dir\\Debug\\cmTC_42781.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_42781.dir\\Debug\\cmTC_42781.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_42781.dir\\Debug\\\\" /Fd"cmTC_42781.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED_ATTR /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_42781.dir\\Debug\\\\" /Fd"cmTC_42781.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx"
+          src.cxx
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,16): error C2065: '__deprecated__': undeclared identifier [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,33): error C2062: type 'int' unexpected [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,48): error C2143: syntax error: missing ';' before '{' [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(1,48): error C2447: '{': missing function header (old-style formal list?) [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\src.cxx(2,25): error C3861: 'somefunc': identifier not found [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nckh4f\\cmTC_42781.vcxproj]
+        
+            0 Warning(s)
+            6 Error(s)
+        
+        Time Elapsed 00:00:00.29
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:269 (_check_cxx_compiler_attribute)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-j8yg7x"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-j8yg7x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-j8yg7x'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9384f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:35 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\cmTC_9384f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9384f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\Debug\\".
+          Creating directory "cmTC_9384f.dir\\Debug\\cmTC_9384f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9384f.dir\\Debug\\cmTC_9384f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9384f.dir\\Debug\\cmTC_9384f.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9384f.dir\\Debug\\\\" /Fd"cmTC_9384f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34120 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D COMPILER_HAS_DEPRECATED /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9384f.dir\\Debug\\\\" /Fd"cmTC_9384f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\src.cxx"
+          src.cxx
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\src.cxx(2,25): warning C4996: 'somefunc': was declared deprecated [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\cmTC_9384f.vcxproj]
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\Debug\\cmTC_9384f.exe" /INCREMENTAL /ILK:"cmTC_9384f.dir\\Debug\\cmTC_9384f.ilk" /NOLOGO /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-j8yg7x/Debug/cmTC_9384f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-j8yg7x/Debug/cmTC_9384f.lib" /MACHINE:X64  /machine:x64 cmTC_9384f.dir\\Debug\\src.obj
+          cmTC_9384f.vcxproj -> C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\Debug\\cmTC_9384f.exe
+        AppLocalFromInstalled:
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\Debug\\cmTC_9384f.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_9384f.dir\\Debug\\cmTC_9384f.tlog\\cmTC_9384f.write.1u.tlog" "cmTC_9384f.dir\\Debug\\vcpkg.applocal.log"
+          'pwsh.exe' is not recognized as an internal or external command,
+          operable program or batch file.
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\Debug\\cmTC_9384f.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_9384f.dir\\Debug\\cmTC_9384f.tlog\\cmTC_9384f.write.1u.tlog" "cmTC_9384f.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\Debug\\cmTC_9384f.exe" "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_9384f.dir\\Debug\\cmTC_9384f.tlog\\cmTC_9384f.write.1u.tlog" "cmTC_9384f.dir\\Debug\\vcpkg.applocal.log"
+        FinalizeBuildStatus:
+          Deleting file "cmTC_9384f.dir\\Debug\\cmTC_9384f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9384f.dir\\Debug\\cmTC_9384f.tlog\\cmTC_9384f.lastbuildstate".
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\cmTC_9384f.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\cmTC_9384f.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\src.cxx(2,25): warning C4996: 'somefunc': was declared deprecated [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-j8yg7x\\cmTC_9384f.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.81
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:141 (check_symbol_exists)"
+    checks:
+      - "Looking for __fbufsize"
+    directories:
+      source: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-1qcwn7"
+      binary: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-1qcwn7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "HAVE_FBUFSIZE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/CMakeFiles/CMakeScratch/TryCompile-1qcwn7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dcbbd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.2+c078802d4 for .NET Framework
+        Build started 11/26/2024 9:01:36 AM.
+        
+        Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\cmTC_dcbbd.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_dcbbd.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\Debug\\".
+          Creating directory "cmTC_dcbbd.dir\\Debug\\cmTC_dcbbd.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_dcbbd.dir\\Debug\\cmTC_dcbbd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_dcbbd.dir\\Debug\\cmTC_dcbbd.tlog\\unsuccessfulbuild".
+        VcpkgTripletSelection:
+          Using triplet "x64-windows" from "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\"
+          Using normalized configuration "Debug"
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dcbbd.dir\\Debug\\\\" /Fd"cmTC_dcbbd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\CheckSymbolExists.c"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /I"C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dcbbd.dir\\Debug\\\\" /Fd"cmTC_dcbbd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'stdio_ext.h': No such file or directory [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\cmTC_dcbbd.vcxproj]
+        Done Building Project "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\cmTC_dcbbd.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\cmTC_dcbbd.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\CheckSymbolExists.c(2,10): error C1083: Cannot open include file: 'stdio_ext.h': No such file or directory [C:\\Users\\Anthony\\Desktop\\School\\DSA\\Proj-3-repo\\NYC-Public-Transport-Analysis\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1qcwn7\\cmTC_dcbbd.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.28
+        
+      exitCode: 1
+...

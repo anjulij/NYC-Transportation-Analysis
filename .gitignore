@@ -1,3 +1,4 @@
 data/csvs/*
 .env
 tests/*
+build/*
