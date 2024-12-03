@@ -1,3 +1,16 @@
+/* Root variables for colors */
+:root {
+    --primary-bg: linear-gradient(135deg, #1e1e2f, #383854);
+    --navbar-bg: rgb(33, 33, 33);
+    --navbar-hover-bg: rgb(80, 80, 165);
+    --content-bg: rgb(255, 255, 255);
+    --content-border: rgb(255, 255, 255);
+    --bottom-bar-bg: rgb(66, 66, 66);
+    --text-color: rgb(224, 224, 224);
+    --hover-text-color: rgb(255, 255, 255);
+    --shadow-color: rgb(0, 0, 0);
+}
+
 /* Reset some default browser styles */
 body, h1, p, nav, #bottombar {
     margin: 0;
@@ -13,7 +26,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #212121;
+    background: var(--primary-bg);
+    color: var(--text-color);
 }
 
 /* Navbar styling */
@@ -25,31 +39,31 @@ nav {
     padding: 0 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background-color: #212121;
-    border-bottom: 2px solid #fff;
+    justify-content: space-between;
+    background: var(--navbar-bg);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px var(--shadow-color);
     z-index: 1000;
 }
 
 nav a {
     font-family: inherit;
-    font-size: 1em;
-    color: #fff;
-    margin: 0 32px;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 10px;
-    border: 2px hidden;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #424242;
-}
-
-nav a#about-link {
-    margin-left: auto;
+    background-color: var(--navbar-hover-bg);
+    color: var(--hover-text-color);
+    border: 1px solid var(--hover-text-color);
 }
 
 /* Content styling */
@@ -61,7 +75,9 @@ nav a#about-link {
     max-width: 1200px;
     min-width: 600px;
     padding: 20px;
-    color: #fff;
+    margin-top: 80px;
+    text-align: center;
+    color: var(--text-color);
 }
 
 /* Bottom bar styling */
@@ -69,12 +85,13 @@ nav a#about-link {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 10px 80px;
-    background-color: #424242;
-    color: #fff;
+    padding: 10px 20px;
+    background: var(--bottom-bar-bg);
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    box-shadow: 0px -4px 10px var(--shadow-color);
 }
 
 #bottombar heart-icon {
