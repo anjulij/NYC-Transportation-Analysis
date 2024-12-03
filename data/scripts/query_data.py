@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
 
-def fetch_data_from_db(output_csv=None):
+def fetch_data_from_db(output_csv=None, desired_day=0, start_hour=0, end_hour=0):
     load_dotenv()
     
     # Database connection details
@@ -25,11 +25,13 @@ def fetch_data_from_db(output_csv=None):
                 longitude, 
                 ridership
             FROM 
-                subway_data;
+                public.subway_data
+            WHERE 
+                EXTRACT(DOW FROM transit_timestamp) = %s AND
+                EXTRACT(HOUR FROM transit_timestamp) BETWEEN %s AND %s;
         """
-
         # Fetch data
-        data = pd.read_sql(query, con=engine)
+        data = pd.read_sql(query, con=engine, params=(desired_day, start_hour, end_hour))
 
         # Save to CSV
         if output_csv:

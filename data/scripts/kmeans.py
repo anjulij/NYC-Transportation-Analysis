@@ -1,7 +1,9 @@
 import random
 import math
-import matplotlib.pyplot as plt
 import csv
+import plotly.express as px
+import plotly.graph_objects as go
+from query_data import fetch_data_from_db
 
 class Point:
     def __init__(self, x, y, ridership):
@@ -43,13 +45,15 @@ def k_means_cluster(points, k):
     return centroids, clusters
 
 def generate_colors(total):
-    base_colors = ["#FF0000", "#00FF00", "#0000FF", "#00FFFF", "#FF00FF", "#808080", "#808000", "#800080", "#008080", "#000080"]
-    while len(base_colors) < total:
-        base_colors.append(f"#{random.randint(0, 0xFFFFFF):06x}")
-    return base_colors
+    return px.colors.qualitative.Plotly[:total]
 
 def main():
-    with open('../data/samples/mta_subway_sample.csv', 'r') as file:
+    # Define the specific time frame (e.g., Monday between 8 AM and 10 AM)
+    desired_day = 1
+    start_hour = 8
+    end_hour = 10
+    fetch_data_from_db(output_csv="mta_subway.csv", desired_day=desired_day, start_hour=start_hour, end_hour=end_hour)
+    with open('mta_subway.csv', 'r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip header
         
@@ -70,24 +74,36 @@ def main():
     cluster_y = [[] for _ in range(k)]
     riders = [[] for _ in range(k)]
     
-    for i, point in enumerate(points):
-        cluster_x[clusters[i]].append(point.x)
-        cluster_y[clusters[i]].append(point.y)
-        riders[clusters[i]].append(point.ridership)
+    fig = go.Figure()
+
+    colors = generate_colors(k)
+    for i in range(k):
+        fig.add_trace(go.Scatter(
+            x=cluster_x[i],
+            y=cluster_y[i],
+            mode='markers',
+            marker=dict(size=riders[i], color=colors[i]),
+            name=f"Cluster {i}"
+        ))
 
     x_centroids = [centroid.x for centroid in centroids]
     y_centroids = [centroid.y for centroid in centroids]
-    colors = generate_colors(k)
+    fig.add_trace(go.Scatter(
+        x=x_centroids,
+        y=y_centroids,
+        mode='markers',
+        marker=dict(size=15, color='black', symbol='x'),
+        name="Centroids"
+    ))
 
-    for i in range(k):
-        plt.scatter(cluster_x[i], cluster_y[i], s=riders[i], color=colors[i], label=f"Cluster {i}")
+    fig.update_layout(
+        title="K-means Clustering based on Distance and Ridership",
+        xaxis_title="Longitude",
+        yaxis_title="Latitude",
+        legend_title="Clusters"
+    )
 
-    plt.scatter(x_centroids, y_centroids, s=200, color="black", marker="x", label="Centroids")
-    plt.xlabel("Longitude")
-    plt.ylabel("Latitude")
-    plt.title("K-means clustering based on distance and ridership")
-    plt.legend()
-    plt.show()
+    fig.show()
 
 if __name__ == "__main__":
     main()
