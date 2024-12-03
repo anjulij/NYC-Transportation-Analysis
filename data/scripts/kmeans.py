@@ -128,4 +128,4 @@ fig.update_layout(
 #fig.show()
 fig.write_html(f"../../website/src/assets/generated_plots/kmeans/kmeans_{start_hour}.html")
 
-print(f"Plot saved to kmeans_{day_name}.html")
+print(f"Plot saved to kmeans_{start_hour}.html")

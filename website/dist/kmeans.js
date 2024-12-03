@@ -37,9 +37,6 @@ export function loadKMeans() {
             iframe.width = '100%';
             iframe.height = '100%';
             iframe.style.border = 'none';
-            // // Set content container dimensions
-            // content.style.width = '100%';
-            // content.style.height = '600px';
             // Clear existing content and append the new iframe
             plotContainer.innerHTML = '';
             plotContainer.appendChild(iframe);

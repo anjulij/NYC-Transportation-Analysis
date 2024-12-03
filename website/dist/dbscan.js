@@ -1,25 +1,63 @@
 export function loadDBSCAN() {
     console.log("Initializing DBSCAN content loader");
     function loadClusterPlot() {
-        console.log("Attempting to load DBSCAN cluster plot");
+        console.log("Attempting to load DBSCAN plot");
         const content = document.getElementById('content');
         if (!content) {
             console.error("Error: Container element with id 'content' not found.");
             return;
         }
-        // Create the iframe element
-        const iframe = document.createElement('iframe');
-        iframe.src = './assets/generated_plots/dbscan_Monday.html?theme=dark';
-        iframe.width = '100%';
-        iframe.height = '100%';
-        iframe.style.border = 'none';
-        // Ensure the parent container has a defined size
-        content.style.width = '100%';
-        content.style.height = '600px';
-        // Clear existing content and append the iframe
+        // Create a separate container for the plot
         content.innerHTML = '';
-        content.appendChild(iframe);
-        console.log("Successfully embedded DBSCAN plot in an iframe.");
+        const plotContainer = document.createElement('div');
+        plotContainer.id = 'plot-container';
+        plotContainer.style.width = '100%';
+        plotContainer.style.height = '600px';
+        content.appendChild(plotContainer);
+        const times = ['8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18'];
+        // Generates plots for a specific time
+        function generatePlots(time) {
+            console.log(`Generating plot for ${time}:00`);
+            if (!content) {
+                console.error("Error: Content element is null when generating plots.");
+                return;
+            }
+            const plotContainer = document.getElementById('plot-container');
+            if (!plotContainer) {
+                console.error("Error: Plot container is null when generating plots.");
+                return;
+            }
+            // Create and configure a new iframe
+            const iframe = document.createElement('iframe');
+            iframe.src = `./assets/generated_plots/dbscan/dbscan_${time}.html`;
+            iframe.width = '100%';
+            iframe.height = '100%';
+            iframe.style.border = 'none';
+            // Clear existing content and append the new iframe
+            plotContainer.innerHTML = '';
+            plotContainer.appendChild(iframe);
+        }
+        // Creates buttons for each time slot and binds event listeners
+        function createButtons() {
+            if (!content) {
+                console.error("Error: Content element is null when generating plots.");
+                return;
+            }
+            const buttonContainer = document.createElement('div');
+            buttonContainer.classList.add('button-container');
+            console.log("Creating buttons for time slots...");
+            times.forEach(time => {
+                const button = document.createElement('button');
+                button.textContent = `${time}:00`;
+                button.onclick = () => generatePlots(time);
+                buttonContainer.appendChild(button);
+            });
+            // Add the new button container
+            content.appendChild(buttonContainer);
+        }
+        // Initialize the first plot and create buttons
+        generatePlots(times[0]);
+        createButtons();
     }
     loadClusterPlot();
 }

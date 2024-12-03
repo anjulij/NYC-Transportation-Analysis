@@ -87,8 +87,8 @@ start_time = time.time()
 
 # Define the specific time frame (e.g., Monday between 8 AM and 10 AM)
 desired_day = 0
-start_hour = 8
-end_hour = 9
+start_hour = 18
+end_hour = 19
 
 sbwy = fetch_data_from_db(None, desired_day=desired_day, start_hour=start_hour, end_hour=end_hour)
 
@@ -148,4 +148,4 @@ fig.update_layout(
 #fig.show()
 fig.write_html(f"../../website/src/assets/generated_plots/dbscan/dbscan_{start_hour}.html")
 
-print(f"Plot saved to dbscan_{day_name}.html")
+print(f"Plot saved to dbscan_{start_hour}.html")
