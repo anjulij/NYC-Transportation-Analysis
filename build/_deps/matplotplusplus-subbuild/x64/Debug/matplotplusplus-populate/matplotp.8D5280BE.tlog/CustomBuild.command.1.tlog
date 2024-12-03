@@ -1,0 +1,150 @@
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\D6B10E694B286779FBBF68A76B0A89D5\MATPLOTPLUSPLUS-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/tmp/matplotplusplus-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/src/matplotplusplus-populate-stamp/Debug/matplotplusplus-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\D6B10E694B286779FBBF68A76B0A89D5\MATPLOTPLUSPLUS-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\Anthony\Desktop\School\DSA\Proj-3-repo\NYC-Public-Transport-Analysis\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/tmp/matplotplusplus-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/src/matplotplusplus-populate-stamp/Debug/matplotplusplus-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\D6B10E694B286779FBBF68A76B0A89D5\MATPLOTPLUSPLUS-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\Anthony\Desktop\School\DSA\Proj-3-repo\NYC-Public-Transport-Analysis\build\_deps\matplotplusplus-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/tmp/matplotplusplus-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\D6B10E694B286779FBBF68A76B0A89D5\MATPLOTPLUSPLUS-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/src/matplotplusplus-populate-stamp/Debug/matplotplusplus-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\D6B10E694B286779FBBF68A76B0A89D5\MATPLOTPLUSPLUS-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\Anthony\Desktop\School\DSA\Proj-3-repo\NYC-Public-Transport-Analysis\build\_deps\matplotplusplus-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/src/matplotplusplus-populate-stamp/Debug/matplotplusplus-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\D6B10E694B286779FBBF68A76B0A89D5\MATPLOTPLUSPLUS-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\Anthony\Desktop\School\DSA\Proj-3-repo\NYC-Public-Transport-Analysis\build\_deps\matplotplusplus-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/src/matplotplusplus-populate-stamp/Debug/matplotplusplus-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\D6B10E694B286779FBBF68A76B0A89D5\MATPLOTPLUSPLUS-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\Anthony\Desktop\School\DSA\Proj-3-repo\NYC-Public-Transport-Analysis\build\_deps\matplotplusplus-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/src/matplotplusplus-populate-stamp/Debug/matplotplusplus-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\D6B10E694B286779FBBF68A76B0A89D5\MATPLOTPLUSPLUS-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\Anthony\Desktop\School\DSA\Proj-3-repo\NYC-Public-Transport-Analysis\build\_deps\matplotplusplus-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/src/matplotplusplus-populate-stamp/Debug/matplotplusplus-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\9EE02CBA0AC1C03363CC705CA8B6BAB5\MATPLOTPLUSPLUS-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/CMakeFiles/Debug/matplotplusplus-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/src/matplotplusplus-populate-stamp/Debug/matplotplusplus-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\B569D094B8FACAD1426AE10835EBCF93\MATPLOTPLUSPLUS-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild -BC:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild --check-stamp-file C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
