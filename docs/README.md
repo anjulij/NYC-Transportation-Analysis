@@ -1,5 +1,7 @@
 # NYC Transportation Analysis
 
+DBSCAN by Jonathan Soto Ortega, K-Means by Anthony Mezzatesta, and web design and data processing by K. Anjuli Jones
+
 # Description and Motivation
 The objective of this project is to identify the bottlenecks in NYC traffic patterns and overlay the taxi, bus, and subway congestion maps. This analysis can lead to more efficient bus/taxi routes and/or help users decide on the most efficient mode of transportation. 
 
@@ -10,23 +12,21 @@ K-Means Clustering is extremely fast and scalable, however, it is limited by dat
 The k-means algorithm works by randomly assigning “k” number of centroids in the data, assigning each data point to a nearest centroid, and recalculating the centroid of each cluster. The algorithm converges once all of the clusters don’t change, and hence the bottlenecks in traffic data are identified. On the other hand, the DBSCAN algorithm works by grouping  data points based on distance and a minimum number of points required to form a cluster. The algorithm finishes once all data points have been visited and assigned a cluster  or marked as noise (Karl, 2024). This will allow for bottlenecks to be identified. 
 
 # Data 
-NYC Taxi Fare Dataset,  MTA hourly bus ridership, and MTA Subway hourly ridership  for analysis. OpenStreetMap and MapBox for our map overlay. 
+MTA Subway hourly ridership  for analysis. OpenStreetMap and MapBox for our map overlay. 
 # Tools
 Python: for data processing, clustering, and analysis
 Libraries: SciPy for statistical analysis and Scikit-Learn for machine learning models. Matplotlib or Plotly for deploying the visualization on the website.
-Typescript, React.js, and Github Pages: to develop and host the interactive visualization of traffic patterns
-PostgreSQL: PostGIS with Neon to store the data
+Typescript and Github Pages: to develop and host the interactive visualization of traffic patterns
+PostgreSQL: PostGIS with AWS to store the data
 Figma: for designing the layout and flow of our website
 
 # Strategy 
-Data will be stored via Git Large File Storage in order to maintain a static data set ensuring reproducibility, PostGIS with Neon for its geospatial capabilities, or Time Series Database for focusing on temporal analysis
-Implement DBSCAN and K-Means concurrently
-Visualize in a 2d data cluster and if time permits, a 3d representation will be created
-Allow users to change input based on time of day
-Stretch Goal: explore algorithms to improve transportation efficiency (min spanning tree)
+Data will be stored via AWS in order to maintain a static data set ensuring reproducibility. We will PostGreSQL  for its geospatial capabilities
 
-# Distribution of Responsibilities and Roles
-We will follow an agile approach to manage and track progress. Tasks will be broken down into sprints. Git will be used for version control. For the first sprint we’ll split the tasks into DBSCAN (Jonathan Soto Ortega), K-Means (Anthony Mezzatesta), and web design and data processing (K. Anjuli Jones). We’ll assign issues that come up to different team members so that everyone is familiar with the code. 
+Implement DBSCAN and K-Means concurrently
+Visualize in a 2d data cluster
+
+Stretch Goals: Allow users to change input based on time of day. Explore algorithms to improve transportation efficiency (min spanning tree)
 
 # References
 Karl, T. (2024, February 12). DBSCAN vs. K-Means: A Guide in Python. New Horizons. https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python
