@@ -1,3 +1,4 @@
+import calendar
 import time
 import numpy as np
 import pandas as pd
@@ -85,7 +86,7 @@ print(f"Fetching data")
 start_time = time.time()
 
 # Define the specific time frame (e.g., Monday between 8 AM and 10 AM)
-desired_day = 1
+desired_day = 0
 start_hour = 8
 end_hour = 10
 
@@ -116,7 +117,12 @@ sbwy.loc[:, 'cluster'] = dbscan(sbwy[['latitude', 'longitude', 'ridership', 'hou
 
 print(f"Plotting results")
 # plot results
+day_name = calendar.day_name[desired_day]
+
 fig = px.scatter_mapbox(sbwy, lat='latitude', lon='longitude', color='cluster', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
-                        mapbox_style="carto-positron", title=f'DBSCAN Clustering Results {desired_day}, {start_hour}:00 - {end_hour}:00')
+                        mapbox_style="carto-positron", title=f'DBSCAN Clustering Results {day_name}, {start_hour}:00 - {end_hour}:00')
 
 fig.show()
+fig.write_html("../../website/src/assets/generated_plots/dbscan_clusters.html")
+
+print("Plot saved to dbscan_clusters.html")
