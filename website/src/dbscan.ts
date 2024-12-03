@@ -12,7 +12,7 @@ export function loadDBSCAN(): void {
 
         // Create the iframe element
         const iframe = document.createElement('iframe');
-        iframe.src = './assets/generated_plots/dbscan_clusters.html'; 
+        iframe.src = './assets/generated_plots/dbscan_Monday.html?theme=dark'; 
         iframe.width = '100%';
         iframe.height = '100%';
         iframe.style.border = 'none'; // Optional: Remove iframe border for a cleaner look
