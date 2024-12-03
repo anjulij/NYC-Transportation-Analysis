@@ -81,10 +81,12 @@ nav a#about-link {
 
 /* Button container styling */
 #button-container {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    overflow-x: auto;
 }
 
 /* Individual button styling */

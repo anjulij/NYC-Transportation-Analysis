@@ -12,7 +12,15 @@ export function loadKMeans(): void {
         if (!content) {
             console.error("Error: Container element with id 'content' not found.");
             return;
-        }
+        } 
+
+        // Create a separate container for the plot
+        content.innerHTML = '';
+        const plotContainer = document.createElement('div');
+        plotContainer.id = 'plot-container';
+        plotContainer.style.width = '100%';
+        plotContainer.style.height = '600px';
+        content.appendChild(plotContainer);
 
         const times = ['8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18'];
 
@@ -25,6 +33,12 @@ export function loadKMeans(): void {
                 return;
             }
 
+            const plotContainer = document.getElementById('plot-container');
+            if (!plotContainer) {
+                console.error("Error: Plot container is null when generating plots.");
+                return;
+            }
+            
             // Create and configure a new iframe
             const iframe = document.createElement('iframe');
             iframe.src = `./assets/generated_plots/kmeans/kmeans_${time}.html`;
@@ -32,38 +46,34 @@ export function loadKMeans(): void {
             iframe.height = '100%';
             iframe.style.border = 'none';
 
-            // Set content container dimensions
-            content.style.width = '100%';
-            content.style.height = '600px';
+            // // Set content container dimensions
+            // content.style.width = '100%';
+            // content.style.height = '600px';
 
             // Clear existing content and append the new iframe
-            content.innerHTML = '';
-            content.appendChild(iframe);
+            plotContainer.innerHTML = '';
+            plotContainer.appendChild(iframe);
         }
 
         // Creates buttons for each time slot and binds event listeners
         function createButtons(): void {
-            const buttonContainer = document.getElementById('button-container');
-            if (!buttonContainer) {
-                console.error("Error: Button container with id 'button-container' not found.");
+            if (!content) {
+                console.error("Error: Content element is null when generating plots.");
                 return;
             }
+
+            const buttonContainer = document.createElement('div');
+            buttonContainer.classList.add('button-container');
 
             console.log("Creating buttons for time slots...");
             times.forEach(time => {
                 const button = document.createElement('button');
-                button.innerText = `${time}:00`;
-                button.id = `time-button-${time}`;
-
-                // Attach click event listener to the button
-                button.addEventListener('click', () => {
-                    console.log(`Button clicked for ${time}:00`);
-                    generatePlots(time); // Generate plot for the selected time
-                });
-
-                // Append button to the container
+                button.textContent = `${time}:00`;
+                button.onclick = () => generatePlots(time);
                 buttonContainer.appendChild(button);
             });
+            // Add the new button container
+            content.appendChild(buttonContainer);
         }
 
         // Initialize the first plot and create buttons
