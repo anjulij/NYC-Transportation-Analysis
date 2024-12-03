@@ -3,10 +3,11 @@ export function loadHome() {
     if (content) {
         console.log('Loading home content');
         content.innerHTML = `
-            <div id="home-content">
-                <p class="center-text">Home</p>
+            <div id="home-content" style="text-align: center;">
+                <h1>Explore NYC's Public Transport Trends</h1>
+                <p>Unveiling insights through advanced clustering methods K-Means and DBSCAN.</p>            
+                <div id="blurb-text"></div>
             </div>
-            <div id="blurb-text"></div>
         `;
     }
     else {

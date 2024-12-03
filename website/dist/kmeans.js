@@ -12,7 +12,7 @@ export function loadKMeans() {
         iframe.src = './assets/generated_plots/kmeans_Monday.html?theme=dark';
         iframe.width = '100%';
         iframe.height = '100%';
-        iframe.style.border = 'none'; // Optional: Remove iframe border for a cleaner look
+        iframe.style.border = 'none';
         // Ensure the parent container has a defined size
         content.style.width = '100%';
         content.style.height = '600px';
