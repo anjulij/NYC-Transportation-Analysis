@@ -118,11 +118,17 @@ sbwy.loc[:, 'cluster'] = dbscan(sbwy[['latitude', 'longitude', 'ridership', 'hou
 print(f"Plotting results")
 # plot results
 day_name = calendar.day_name[desired_day]
-
-fig = px.scatter_mapbox(sbwy, lat='latitude', lon='longitude', color='cluster', size='ridership', color_continuous_scale=px.colors.sequential.Blackbody, size_max=15, zoom=10,
-                        mapbox_style="carto-positron", title=f'DBSCAN Clustering Results {day_name}, {start_hour}:00 - {end_hour}:00')
+fig = px.scatter_mapbox(
+    sbwy, lat='latitude', 
+    lon='longitude', 
+    color='cluster', 
+    size='ridership', 
+    color_continuous_scale=px.colors.sequential.Blackbody, 
+    size_max=15, zoom=10,
+    mapbox_style="carto-positron", 
+    title=f'DBSCAN Clustering Results {day_name}, {start_hour}:00 - {end_hour}:00')
 
 fig.show()
-fig.write_html("../../website/src/assets/generated_plots/dbscan_clusters.html")
+fig.write_html(f"../../website/src/assets/generated_plots/dbscan_{day_name}.html")
 
-print("Plot saved to dbscan_clusters.html")
+print(f"Plot saved to dbscan_{day_name}.html")
