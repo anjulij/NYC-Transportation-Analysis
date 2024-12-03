@@ -1,0 +1,10 @@
+^C:\USERS\ANTHONY\DESKTOP\SCHOOL\DSA\PROJ-3-REPO\NYC-PUBLIC-TRANSPORT-ANALYSIS\BUILD\_DEPS\MATPLOTPLUSPLUS-SUBBUILD\CMAKEFILES\B569D094B8FACAD1426AE10835EBCF93\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild -BC:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-subbuild/matplotplusplus-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

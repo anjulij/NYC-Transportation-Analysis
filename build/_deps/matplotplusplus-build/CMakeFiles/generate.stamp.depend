@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FetchContent.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/CMakeLists.txt
+C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake/functions.cmake
+C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake/functions/ensure_build_type.cmake
+C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake/functions/link_external_libraries.cmake
+C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake/functions/project_flags.cmake
+C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake/functions/sanitizers.cmake
+C:/Users/Anthony/Desktop/School/DSA/Proj-3-repo/NYC-Public-Transport-Analysis/build/_deps/matplotplusplus-src/cmake/functions/target_options.cmake
