@@ -50,8 +50,8 @@ def k_means(points, k, max_iter=100):
 print("Fetching data")
 start_time = time.time()
 desired_day = 0
-start_hour = 8
-end_hour = 10
+start_hour = 18
+end_hour = 19
 
 sbwy = fetch_data_from_db(None, desired_day=desired_day, start_hour=start_hour, end_hour=end_hour)
 
@@ -125,7 +125,7 @@ fig.update_layout(
     ]
 )
 
-fig.show()
-fig.write_html(f"../../website/src/assets/generated_plots/kmeans_{day_name}.html")
+#fig.show()
+fig.write_html(f"../../website/src/assets/generated_plots/kmeans/kmeans_{start_hour}.html")
 
-print(f"Plot saved to kmeans_{day_name}.html")
+print(f"Plot saved to kmeans_{start_hour}.html")

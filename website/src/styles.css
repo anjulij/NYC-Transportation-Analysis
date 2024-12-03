@@ -1,3 +1,9 @@
+:root {
+    --background-color: #212121;
+    --bottom-bar-color: #424242;
+    --text-color: #fff;
+    --border-color: #fff;
+}
 /* Reset some default browser styles */
 body, h1, p, nav, #bottombar {
     margin: 0;
@@ -12,10 +18,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #212121;
+    min-height: 100vh;
+    background-color: var(--background-color);
 }
-
+#about-content {
+    text-align: justify;
+    overflow-y: auto;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;    
+    color: var(--text-color);
+    /* font-family: 'Literata', serif; */
+    line-height: 1.6; 
+}
 /* Navbar styling */
 nav {
     position: fixed;
@@ -26,15 +41,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #212121;
-    border-bottom: 2px solid #fff;
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--border-color);
     z-index: 1000;
 }
 
 nav a {
     font-family: inherit;
     font-size: 1em;
-    color: #fff;
+    color: var(--border-color);
     margin: 0 32px;
     text-decoration: none;
     display: flex;
@@ -45,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #424242;
+    background-color: var(--bottom-bar-color);
 }
 
 nav a#about-link {
@@ -61,7 +76,36 @@ nav a#about-link {
     max-width: 1200px;
     min-width: 600px;
     padding: 20px;
-    color: #fff;
+    color: var(--text-color);
+}
+
+/* Button container styling */
+#button-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* Individual button styling */
+#button-container button {
+    font-family: inherit;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--bottom-bar-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button-container button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 /* Bottom bar styling */
@@ -70,8 +114,8 @@ nav a#about-link {
     bottom: 0;
     width: 100%;
     padding: 10px 80px;
-    background-color: #424242;
-    color: #fff;
+    background-color: var(--bottom-bar-color);
+    color: var(--border-color);
     display: flex;
     align-items: center;
     justify-content: flex-end;
