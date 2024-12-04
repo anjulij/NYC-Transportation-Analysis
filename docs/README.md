@@ -33,25 +33,25 @@ Stretch Goals: Allow users to change input based on time of day. Explore algorit
 View website at: http://AnthonyMezzatesta.GitHub.io 
 
 To run the website locally:
-$ sudo apt update
-$ brew update upgrade
-$ cd /path/to/main/repo
-$ cd website
-$ npm install
-$ npx tsc
-$ python3 -m http.server 8000
+  - sudo apt update
+  - brew update upgrade
+  - cd /path/to/main/repo
+  - cd website
+  - npm install
+  - npx tsc
+  - python3 -m http.server 8000
 
 View website at: http://localhost:8000/src/main.html#home 
 
 To run dbscan.py or kmeans.py:
 Install the necessary things and run:
-$ cd data/scripts
-$ pip install numpy
-$ pip install pandas
-$ pip install plotly
-$ pip install scikit-learn
-$ python3 dbsca.py
-$ python3 dbsca.py
+  - cd data/scripts
+  - pip install numpy
+  - pip install pandas
+  - pip install plotly
+  - pip install scikit-learn
+  - python3 dbscan.py
+  - python3 kmeans.py
 
 For more in-depth logs visit: https://docs.google.com/document/d/1shF7xP5-3gT2tOopyXdo-nvUYgMe50XKBsl7Wzwg-hU/edit?usp=sharing
 
