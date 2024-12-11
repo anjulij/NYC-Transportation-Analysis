@@ -1,13 +1,15 @@
 import { loadHome } from './home.js';
+import { loadComparison } from './comparison.js';
 import { loadKMeans } from './kmeans.js';
 import { loadDBSCAN } from './dbscan.js';
 import { loadAbout } from './about.js';
 function createNavBar() {
-    var _a, _b, _c, _d;
+    var _a, _b, _c, _d, _e;
     const navbar = document.getElementById('navbar');
     if (navbar) {
         navbar.innerHTML = `
             <a href="#" id="home-link">NYC Public Transport Analysis</a>
+            <a href="#" id="comparison-link">Comparison</a>
             <a href="#" id="kmeans-link">K-Means</a>
             <a href="#" id="dbscan-link">DBSCAN</a>
             <a href="#" id="about-link">About</a>
@@ -17,17 +19,22 @@ function createNavBar() {
             console.log('Home link clicked');
             loadHome();
         });
-        (_b = document.getElementById('kmeans-link')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (e) => {
+        (_b = document.getElementById('comparison-link')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('Comparison link clicked');
+            loadComparison();
+        });
+        (_c = document.getElementById('kmeans-link')) === null || _c === void 0 ? void 0 : _c.addEventListener('click', (e) => {
             e.preventDefault();
             console.log('KMeans link clicked');
             loadKMeans();
         });
-        (_c = document.getElementById('dbscan-link')) === null || _c === void 0 ? void 0 : _c.addEventListener('click', (e) => {
+        (_d = document.getElementById('dbscan-link')) === null || _d === void 0 ? void 0 : _d.addEventListener('click', (e) => {
             e.preventDefault();
             console.log('DBSCAN link clicked');
             loadDBSCAN();
         });
-        (_d = document.getElementById('about-link')) === null || _d === void 0 ? void 0 : _d.addEventListener('click', (e) => {
+        (_e = document.getElementById('about-link')) === null || _e === void 0 ? void 0 : _e.addEventListener('click', (e) => {
             e.preventDefault();
             console.log('About link clicked');
             loadAbout();
