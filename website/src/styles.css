@@ -1,9 +1,15 @@
 :root {
     --background-color: #212121;
     --bottom-bar-color: #424242;
+    --button-color: #7779fd;
+    --button-text-color: #fff;
+    --button-hover-color: #595cff;
+    --button-hover-text-color: #ffffff;
     --text-color: #fff;
     --border-color: #fff;
+    --about-link-color: #b5b6fd;
 }
+
 /* Reset some default browser styles */
 body, h1, p, nav, #bottombar {
     margin: 0;
@@ -21,28 +27,29 @@ body {
     min-height: 100vh;
     background-color: var(--background-color);
 }
+
 #about-content {
     text-align: justify;
     overflow-y: auto;
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 20px;    
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 1.25em;
     color: var(--text-color);
-    /* font-family: 'Literata', serif; */
-    line-height: 1.6; 
+    line-height: 1.6;
 }
+
 /* Navbar styling */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 20px;
+    padding: 0.5em 1.25em;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: var(--background-color);
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 0.125em solid var(--border-color);
     z-index: 1000;
 }
 
@@ -50,13 +57,13 @@ nav a {
     font-family: inherit;
     font-size: 1em;
     color: var(--border-color);
-    margin: 0 32px;
+    margin: 0 2em;
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 10px;
-    border: 2px hidden;
-    border-radius: 10px;
+    padding: 0.2em 1em;
+    border: 0.125em hidden;
+    border-radius: 0.75em;
 }
 
 nav a:hover {
@@ -65,6 +72,7 @@ nav a:hover {
 
 nav a#about-link {
     margin-left: auto;
+    color: var(--about-link-color)
 }
 
 /* Content styling */
@@ -73,40 +81,36 @@ nav a#about-link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*max-width: 1200px;
-    min-width: 600px;*/
     width: 100%;
-    padding: 20px;
+    padding: 1.25em;
     color: var(--text-color);
 }
 
 /* Button container styling */
-#button-container {
-    display:flex;
+.button-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    padding: 20px;
+    max-width: 75em;
+    padding: 1.25em;
     overflow-x: auto;
+    gap: 0.625em;
 }
 
 /* Individual button styling */
-#button-container button {
+.button-container button {
     font-family: inherit;
     font-size: 1em;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: 2px solid var(--border-color);
-    border-radius: 5px;
-    background-color: var(--bottom-bar-color);
-    color: var(--text-color);
-    cursor: pointer;
+    padding: 0.5em 1.5em;
+    border-radius: 0.625em;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
     transition: background-color 0.3s ease;
 }
 
-#button-container button:hover {
-    background-color: var(--text-color);
-    color: var(--background-color);
+.button-container button:hover {
+    color: var(--button-hover-text-color);
+    background-color: var(--button-hover-color);
 }
 
 /* Bottom bar styling */
@@ -114,7 +118,7 @@ nav a#about-link {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 10px 80px;
+    padding: 0.625em 5em;
     background-color: var(--bottom-bar-color);
     color: var(--border-color);
     display: flex;
@@ -123,5 +127,5 @@ nav a#about-link {
 }
 
 #bottombar heart-icon {
-    height: 32px;
+    height: 2em;
 }

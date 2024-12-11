@@ -4,40 +4,51 @@ import { loadKMeans } from './kmeans.js';
 import { loadDBSCAN } from './dbscan.js';
 import { loadAbout } from './about.js';
 function createNavBar() {
-    var _a, _b, _c, _d, _e;
     const navbar = document.getElementById('navbar');
     if (navbar) {
         navbar.innerHTML = `
-            <a href="#" id="home-link">NYC Public Transport Analysis</a>
+            <a href="#" id="home-link" aria-current="page">NYC Public Transport Analysis</a>
             <a href="#" id="comparison-link">Comparison</a>
             <a href="#" id="kmeans-link">K-Means</a>
             <a href="#" id="dbscan-link">DBSCAN</a>
             <a href="#" id="about-link">About</a>
         `;
-        (_a = document.getElementById('home-link')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', (e) => {
-            e.preventDefault();
-            console.log('Home link clicked');
-            loadHome();
+        // Event delegation for navigation links
+        navbar.addEventListener('click', (event) => {
+            const target = event.target;
+            if (target.tagName === 'A') {
+                event.preventDefault();
+                const links = navbar.querySelectorAll('a');
+                links.forEach((link) => link.removeAttribute('aria-current'));
+                target.setAttribute('aria-current', 'page');
+                const linkId = target.id;
+                // Load appropriate content
+                switch (linkId) {
+                    case 'home-link':
+                        loadHome();
+                        break;
+                    case 'comparison-link':
+                        loadComparison();
+                        break;
+                    case 'kmeans-link':
+                        loadKMeans();
+                        break;
+                    case 'dbscan-link':
+                        loadDBSCAN();
+                        break;
+                    case 'about-link':
+                        loadAbout();
+                        break;
+                }
+            }
         });
-        (_b = document.getElementById('comparison-link')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (e) => {
-            e.preventDefault();
-            console.log('Comparison link clicked');
-            loadComparison();
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Tab') {
+                document.body.classList.add('user-is-tabbing');
+            }
         });
-        (_c = document.getElementById('kmeans-link')) === null || _c === void 0 ? void 0 : _c.addEventListener('click', (e) => {
-            e.preventDefault();
-            console.log('KMeans link clicked');
-            loadKMeans();
-        });
-        (_d = document.getElementById('dbscan-link')) === null || _d === void 0 ? void 0 : _d.addEventListener('click', (e) => {
-            e.preventDefault();
-            console.log('DBSCAN link clicked');
-            loadDBSCAN();
-        });
-        (_e = document.getElementById('about-link')) === null || _e === void 0 ? void 0 : _e.addEventListener('click', (e) => {
-            e.preventDefault();
-            console.log('About link clicked');
-            loadAbout();
+        document.addEventListener('mousedown', () => {
+            document.body.classList.remove('user-is-tabbing');
         });
     }
     else {
@@ -49,7 +60,8 @@ function createBottomBar() {
     if (bottombar) {
         bottombar.innerHTML = `
             COP 3530 Project 
-            <img src="assets/images/favorite_24dp.svg" alt="heart icon" id="heart-icon">`;
+            <img src="assets/images/favorite_24dp.svg" alt="heart icon" id="heart-icon" role="img">
+        `;
     }
     else {
         console.error('Bottom bar element not found');

@@ -10,6 +10,8 @@ export function loadComparison() {
         // Create a separate container for the plot
         content.innerHTML = '';
         const plotContainer = document.createElement('div');
+        plotContainer.setAttribute('role', 'region');
+        plotContainer.setAttribute('aria-label', 'DBSCAN and KMeans Plot');
         plotContainer.id = 'plot-container';
         plotContainer.style.width = '100%';
         plotContainer.style.height = '600px';
@@ -59,9 +61,13 @@ export function loadComparison() {
             }
             const buttonContainer = document.createElement('div');
             buttonContainer.classList.add('button-container');
+            buttonContainer.setAttribute('role', 'group');
+            buttonContainer.setAttribute('aria-label', 'Buttons for selecting time');
             console.log("Creating buttons for time slots...");
             times.forEach(time => {
                 const button = document.createElement('button');
+                button.setAttribute('role', 'button');
+                button.setAttribute('aria-label', `Select ${time}:00`);
                 button.textContent = `${time}:00`;
                 button.onclick = () => generatePlots(time);
                 buttonContainer.appendChild(button);
