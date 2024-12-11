@@ -1,7 +1,7 @@
 :root {
     --background-color: #212121;
     --bottom-bar-color: #424242;
-    --button-color: #6e70ff;
+    --button-color: #7779fd;
     --button-text-color: #fff;
     --button-hover-color: #595cff;
     --button-hover-text-color: #ffffff;
@@ -63,7 +63,7 @@ nav a {
     align-items: center;
     padding: 0.2em 1em;
     border: 0.125em hidden;
-    border-radius: 0.625em;
+    border-radius: 0.75em;
 }
 
 nav a:hover {
