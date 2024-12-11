@@ -1,12 +1,13 @@
 :root {
     --background-color: #212121;
     --bottom-bar-color: #424242;
-    --button-color: #b6b6fd;
-    --button-text-color: #000000;
-    --button-hover-color: #9d9dea;
-    --button-hover-text-color: #000;
+    --button-color: #6e70ff;
+    --button-text-color: #fff;
+    --button-hover-color: #595cff;
+    --button-hover-text-color: #ffffff;
     --text-color: #fff;
     --border-color: #fff;
+    --about-link-color: #b5b6fd;
 }
 
 /* Reset some default browser styles */
@@ -43,7 +44,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 1.25em;
+    padding: 0.5em 1.25em;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -60,7 +61,7 @@ nav a {
     text-decoration: none;
     display: flex;
     align-items: center;
-    padding: 0.625em;
+    padding: 0.2em 1em;
     border: 0.125em hidden;
     border-radius: 0.625em;
 }
@@ -71,6 +72,7 @@ nav a:hover {
 
 nav a#about-link {
     margin-left: auto;
+    color: var(--about-link-color)
 }
 
 /* Content styling */
