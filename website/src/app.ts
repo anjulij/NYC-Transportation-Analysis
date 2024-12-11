@@ -1,4 +1,5 @@
 import { loadHome } from './home.js';
+import { loadComparison } from './comparison.js';
 import { loadKMeans } from './kmeans.js';
 import { loadDBSCAN } from './dbscan.js';
 import { loadAbout } from './about.js';
@@ -9,6 +10,7 @@ function createNavBar(): void {
     if (navbar) {
         navbar.innerHTML = `
             <a href="#" id="home-link">NYC Public Transport Analysis</a>
+            <a href="#" id="comparison-link">Comparison</a>
             <a href="#" id="kmeans-link">K-Means</a>
             <a href="#" id="dbscan-link">DBSCAN</a>
             <a href="#" id="about-link">About</a>
@@ -18,6 +20,12 @@ function createNavBar(): void {
             e.preventDefault();
             console.log('Home link clicked');
             loadHome();
+        });
+
+        document.getElementById('comparison-link')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('Comparison link clicked');
+            loadComparison();
         });
 
         document.getElementById('kmeans-link')?.addEventListener('click', (e) => {
