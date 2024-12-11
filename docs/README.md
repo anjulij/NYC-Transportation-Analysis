@@ -53,7 +53,5 @@ Install the necessary things and run:
   - python3 dbscan.py
   - python3 kmeans.py
 
-For more in-depth logs visit: https://docs.google.com/document/d/1shF7xP5-3gT2tOopyXdo-nvUYgMe50XKBsl7Wzwg-hU/edit?usp=sharing
-
 # References
 Karl, T. (2024, February 12). DBSCAN vs. K-Means: A Guide in Python. New Horizons. https://www.newhorizons.com/resources/blog/dbscan-vs-kmeans-a-guide-in-python
