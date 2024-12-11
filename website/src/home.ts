@@ -5,7 +5,8 @@ export function loadHome(): void {
         content.innerHTML = `
             <div id="home-content" style="text-align: center;">
                 <h1>Explore MTA Subway Trends</h1>
-                <p>Unveiling insights through advanced clustering methods K-Means and DBSCAN.</p>            
+                    <p>Unveiling insights through advanced clustering methods K-Means and DBSCAN.</p> 
+                    <p>Every Monday in 2022</p>            
                 <div id="blurb-text"></div>
             </div>
         `;
