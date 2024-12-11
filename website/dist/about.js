@@ -7,7 +7,7 @@ export function loadAbout() {
                 <h1>NYC Transportation Analysis</h1>
                 <p>DBSCAN by Jonathan Soto Ortega, K-Means by Anthony Mezzatesta, and web design and data processing by K. Anjuli Jones</p>
                 <h2>Description and Motivation</h2>
-                <p>The objective of this project is to identify the bottlenecks in NYC traffic patterns and overlay the taxi, bus, and subway congestion maps. This analysis can lead to more efficient bus/taxi routes and/or help users decide on the most efficient mode of transportation.</p>
+                <p>The objective of this project is to subway congestion. Currently, we have analyzed every Monday in 2022. This analysis can lead to more efficient routes and/or help users decide on the most efficient mode of transportation.</p>
                 <h2>Clustering Algorithms to Compare</h2>
                 <p>K-Means Clustering is extremely fast and scalable, however, it is limited by data that is unevenly clustered. Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is great for a natural fit and handling noise, however, it is limited by significant density variation. The centroids identified by K-Means will represent potential bottleneck areas, whereas DBSCAN's ability to handle noise may help identify less obvious hotspots.</p>
                 <h2>Features</h2>
