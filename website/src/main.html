@@ -11,10 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navbar" role="navigation" aria-label="Main Navigation"></nav>
-    <div id="content" role="main" aria-label="Content"></div>
+    <nav id="navbar" role="navigation" aria-label="Main Navigation">
+        <a href="#content">Skip to Content</a>
+        <a href="#home-content" id="home-link">Home</a>
+        <a href="#comparison-content" id="comparison-link">Comparison</a>
+        <a href="#kmeans-content" id="kmeans-link">K-Means</a>
+        <a href="#dbscan-content" id="dbscan-link">DBSCAN</a>
+        <a href="#about-content" id="about-link">About</a>
+    </nav>
+    <div id="content" role="main" aria-label="Main Content"></div>
+    <div id="home-content" role="region" aria-label="Home Section"></div>
+    <div id="comparison-content" role="region" aria-label="Comparison Section"></div>
+    <div id="kmeans-content" role="region" aria-label="K-Means Section"></div>
+    <div id="dbscan-content" role="region" aria-label="DBSCAN Section"></div>
     <div id="about-content" role="region" aria-label="About Section"></div>
-    <div id="bottombar" role="contentinfo" aria-label="Bottom bar: COP 3530 Project"></div>
-    <script type= "module" src="../dist/app.js"></script>
+    <div id="bottombar" role="contentinfo" aria-label="Bottom Bar: COP 3530 Project"></div>
+    <script type="module" src="../dist/app.js"></script>
 </body>
 </html>
